@@ -67,7 +67,21 @@ body {
 .dropdown:hover .dropdown-content {
   display: block;
 }
-  
+<!-- THIS SECTION manages the animated text -->
+  @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    .animated-text {
+      animation: fadeIn 2s ease-in-out;
+    }
+   
+<!-- THIS SECTION manages the alignment through class -->  
 div.a {
   text-align: center;
 }
@@ -150,8 +164,8 @@ div.d {
       height: 50px;
       z-index: 100;
     ">
-      <h2>Educational Resources You can Use to Ensure your Student's Success!</h2>
-    </div>
+      <h3 class="animated-text">Educational Resources You can Use to Ensure your Student's Success!</h3>
+     </div>
 
 
 <h1 style="text-align:center;">2024 TEEN SUMMIT</h1>
@@ -160,7 +174,8 @@ div.d {
 <div class="a">
 <h4>You Got Next</h2>
 <h1>Face Book Groups</h1>
-<button type="button" onclick="alert('The Scholarship Club')">Click Here</button>
+<button type="button" onclick="alert('The Scholarship Club 
+                                      Black, Brown & HBCU Bound')">Click Here</button>
 </div>
 
 <div class="b">
