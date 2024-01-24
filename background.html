@@ -1,29 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Background Image Example</title>
-  <style>
-    body {
-      background-image: url('path/to/your/image.jpg');
-      background-size: cover; /* or 'contain' based on your preference */
-      background-repeat: no-repeat;
-      background-position: center center;
-      /* Optional: You can set background color as a fallback */
-      background-color: #f0f0f0;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Webpage Title</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('background.jpg'); /* Replace 'background.jpg' with your image file path */
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+        }
 
-    /* Additional styles for content */
-    h1 {
-      color: #ffffff;
-      text-align: center;
-    }
-  </style>
+        nav {
+            background-color: #333;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            display: inline-block;
+        }
+    </style>
 </head>
 <body>
 
-<h1>Hello, World!</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <!-- Your page content goes here -->
 
 </body>
 </html>
