@@ -16,10 +16,15 @@ body {font-family: Arial, Helvetica, sans-serif}
   background-repeat: no-repeat;
   background-size: cover;
  /* Needed to position the navbar */
- position: static;
- border: 3px solid #73AD21;
+ position: relative;
+ border: 3px solid #73AD21;  /*border around background*/
 }    
-
+/* Position the navbar container inside the image */
+.container {
+  position: absolute;
+  margin: 20px;
+  width: auto;
+}
 /* The navbar */
 .navbar {
   overflow: hidden;
@@ -106,6 +111,7 @@ div.d {
 <h3 class="animated-text">Educational Resources You can Use to Ensure your Student's Success!</h3>
 
   <div class="bg-img">
+  <div class="container">  
   <div class="navbar">
   <div class="dropdown">
     <button class="dropbtn">College Resources
@@ -122,6 +128,7 @@ div.d {
             <a href="https://hbcuconnect.com/hbcu/state/texas">DFW HBCU Connection</a>
             <a href="https://www.dymensionseducation.com/programs-impact">Dymensions Edu Consulting</a>
     </div>
+  </div>
   </div>
   </div> 
   
