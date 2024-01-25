@@ -1,3 +1,5 @@
+/*.navbar-default{background-color: transparent;} */
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,11 +8,20 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>testing the image</title>
   <style>
-   body {
-    font-family: Arial, Helvetica, sans-serif;
-   }
-
-.navbar {
+   body {font-family: Arial, Helvetica, sans-serif}
+ 
+/* the Image used section */   
+.bg-img{
+   background-image: url(" ");
+   min-height: 380px;
+   background-position: center;    /* Center and scale the image*/
+   background-repeat: no-repeat;   /* Center and scale the image*/
+   background-size: cover;         /* Center and scale the image*/
+  
+   position: relative;            /* position the navbar */
+}
+  
+  .navbar {
   overflow: hidden;
   background-color: #333;
 }
