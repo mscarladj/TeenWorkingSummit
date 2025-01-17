@@ -8,7 +8,7 @@ body {font-family: Arial, Helvetica, sans-serif}
 
 .bg-img {    
   /* The image used */
-  background-image: url(https://raw.githubusercontent.com/mscarladj/TeenWorkingSummit/b079343ec802e40e0011ca926122619e73806b8e/image_TSummit_2024.svg);
+  background-image: url(https://raw.githubusercontent.com/mscarladj/TeenWorkingSummit/17eea29d71e9b9581be57325b0f6902ddc403a95/image_teenSmtSuccess25.SVG);
   height: 500px;
   /*background-image: url("https://raw.githubusercontent.com/mscarladj/TeenWorkingSummit/fee1608c3d5885d9e7dae070c82d1718e64811a0/image_school_Network.svg");*/
   /*background-image: url("https://images.pexels.com/photos/1762851/pexels-photo-1762851.jpeg?auto=compress&cs=tinysrgb&w=400");*/
