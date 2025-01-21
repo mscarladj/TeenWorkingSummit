@@ -4,7 +4,25 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Teen Summit Resource</title>
 <style>
-body {font-family: baskerville}
+
+  @media only screen and (max-width:800px) {
+    /* For tablets: */
+    .main {
+      width: 80%;
+      padding: 0;
+    }
+     .right {
+      width: 100%;
+      }
+}
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  }
+}
+  
+body {font-family: Baskerville}
 
 /* The IMAGE USED */  
 .bg-img {    
@@ -14,7 +32,7 @@ body {font-family: baskerville}
   /*background-image: url("https://images.pexels.com/photos/1762851/pexels-photo-1762851.jpeg?auto=compress&cs=tinysrgb&w=400");*/
   
   /* Center and scale the image */
-  background-position: relative;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover; 
 }
@@ -27,10 +45,7 @@ body {font-family: baskerville}
 }
 
 .navbar a {
- <!--  float: none; -->
-  position: absolute;
-  left: 200px;
-  top: 150px;
+  float: left; 
   font-size: 16px;
   color: red;
   text-align: center;
@@ -300,21 +315,21 @@ span{
     </div>
 </div> 
 
-<!-- Quote #1 Section  -->
+ 
+  <div class="b"> 
+    <p style="text-align: center;" style="color:#990000;"><span>Thank  You</span>Parents, Guardians, Visitors and Friends,<br>for helping to make </p>
+    <h1 style="color:#990000;"><a class="ex2"><em>2025 TEEN SUMMIT<br>A Success!</em></a></h1>
+  </div>
+
+  <!-- Quote #1 Section  -->
   <div style="
       position: absolute;
       background-color: inherit;
       color: #333333;
-      bottom: 150px;
+      bottom: 500px;
       right: 0px;
   "> 
-    <p style="font-family:'baskerville', serif;"><small>Before Anything Else, Preparation is the Key to Success!<br>~Alexander Graham Bell</small></p>
+    <p style="font-family:'Baskerville', Sans Serif;"><small>Before Anything Else, Preparation is the Key to Success!<br>~Alexander Graham Bell</small></p>
 </div>
- 
-  <div class="a"> 
-    <p style="text-align: center;" style="color:#990000;"><span>Thank  You</span>Parents, Guardians, Visitors and Friends,<br>for helping to make </p>
-    <h1 style="color:#990000;"><a class="ex2"><em>2025 TEEN SUMMIT<br>A Success!</em></a></h1>
-    
-  </div>
   </body>
 </html>
