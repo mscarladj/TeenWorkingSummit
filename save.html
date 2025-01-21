@@ -14,7 +14,7 @@ body {font-family: baskerville}
   /*background-image: url("https://images.pexels.com/photos/1762851/pexels-photo-1762851.jpeg?auto=compress&cs=tinysrgb&w=400");*/
   
   /* Center and scale the image */
-  background-position: absolute;
+  background-position: relative;
   background-repeat: no-repeat;
   background-size: cover; 
 }
@@ -146,7 +146,6 @@ span{
       @media screen and (max-width: 768px) {
       .ctext-wrap .btn {
        display: block;
-       width: 100%;
        margin: 0 auto;
             }
         }
@@ -164,11 +163,11 @@ span{
 <div class="a"> 
   <h1 style="color:#b30000;"><a class="ex2"><em>2025 TEEN SUMMIT<br>Parent Resource<br/></em></a></h1>
   </div>
-<div class="b">
-<p style="color:#000000;",style="font-size:5vw;"><a class="ex2"><em>Check out these Websites for Insightful Information!</em></a></p>
+  <div class="b">
+  <p style="color:#000000;",style="font-size:5vw;"><a class="ex2"><em>Check out these Websites for Insightful Information!</em></a></p>
 </div>
-<div class="c">
-  <p style="color:#000000;",style="font-size:5vw;"><a class="ex2"><em>Check out these Social Media Sites for Insightful Information!</em></a></p>
+   <div class="c">
+  <p style="color:#000000;",style="font-size:5vw;"><a class="ex2"><em>Check out these Social Media sites for Insightful Information!</em></a></p>
 </div>
 <div class="bg-img">
 <div class="navbar">  <!-- /* START NAV-BAR */ -->
@@ -228,11 +227,13 @@ span{
            <a href="https://www.todaysmilitary.com">Military Resources</a>    
     </div>
   </div>
-
-<div class="dropdown">
+</div>
+   
+<div class="c">
+  <div class="dropdown">
     <button class="dropbtn">Social Media Resources
       <i class="fa fa-caret-down"></i>
-     <a href="#popup" style="padding: 10px 20px; background-color: #007BFF; 
+     <a href="#popup" style="padding: 10px 20px; background-color: #990000; 
                             color: #fff; text-decoration: none; border-radius: 5px;">Click for List of FaceBook Groups!</a>
     <div id="popup" class="popup">
         <div class="popup-content">
@@ -257,11 +258,13 @@ span{
     </div> 
     </button>
    </div>
-  
+</div> <!-- div for right justified -->
+
 </div>
 </div>
 
-<div class="a">
+ 
+<div class="a">  <!-- border style -->
    <div style="
       background-color:#990000;
       border-style: double;
@@ -269,36 +272,17 @@ span{
       height: -400px;
       width:  -500px;
       position: relative;
-    ">
-     
-  <!--   /*OLD Groups block */
-   <h4 style="color: black;"><p style="text-align:center;">For More Information on What is Current and How to Stay Connected</p></h4>
-   <h4 style="color: black;"><p style="text-align:center;"><a class="ex2"><em>Check out this List of FaceBook Groups!</em></a></p></h4>
-    <article>  
-    <ul style="color: white;"> 
-      <li style="text-align: center;">The Scholarship Club</li>
-      <li style="text-align: center;">Black, Brown & HBCU Bound</li> 
-      <li style="text-align: center;">College Ave</li>
-      <li style="text-align: center;">HBCU Connect</li>
-      <li style="text-align: center;">Common Black College Application</li>
-      <li style="text-align: center;">Scholarship 101: Securing the Bag</li>
-      <li style="text-align: center;">DFW HBCU Connection</li>
-   </ul>
-  <h4 style="color: white;"><p style="text-align:center;">You can log into your Facebook account and<br>type in each one of the titles in your search browser.<br>You are Welcome to Join the Groups!</p></h4>
-  </article>
-  -->
-
-     
-  <!--  /* Popup Button section */ -->
+    ">  
+      
+<!--  /* Popup Button section */ -->
 <div class="c">
-  <p style="color:#000000;",style="font-size:5vw;"><a class="ex2"><em>Check out these Social Media Sites for Insightful Information!</em></a></p>
   <a href="#popup" style="padding: 10px 10px; background-color: #cc2900; 
                             color: #fff; text-decoration: none; border-radius: 5px;">Click for Contact Information</a>
     <div id="popup" class="popup">
         <div class="popup-content">
             <h2>For more information, contact here:</h2>
        <ul style="color: black;"> 
-              <li style="text-align: center;">ccacdst.teensummit@gmail.com</li>
+          <li style="text-align: center;">ccacdst.teensummit@gmail.com</li>
        </ul>
           <h4 style="color: white;">
           <p style="text-align:center;">Connect by logging into your Facebook account and<br>typing in the title in your search browser.
@@ -316,9 +300,9 @@ span{
 <!-- Quote #1 Section  -->
   <div style="
       position: absolute;
-      background-color: 
+      background-color: inherit;
       color: #333333;
-      top: 44px;
+      bottom: 44px;
       right: 0px;
   "> 
     <p style="font-family:'baskerville', serif;"><small>Before Anything Else, Preparation is the Key to Success!<br>~Alexander Graham Bell</small></p>
