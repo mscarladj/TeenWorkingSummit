@@ -149,16 +149,6 @@ span{
   font-family:algerian,courier;
   line-height:80%;
 }
-/* Popup container - can be anything you want */
-.popup {
-  position: relative;
-  display: inline-block;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
 
 /* The actual popup */
 .popup .popuptext {
@@ -322,25 +312,6 @@ span{
     </div>   
  </div>
 
-  <!--  /* Popup Button Contact section */ -->
-
-  <div class="c">
-    <a href="#popup" style="padding: 10px 10px; 
-                     background-color: #990000;  
-                     color: #fff; 
-                     text-decoration: none;
-                     border-radius: 10px;">Click for Contact Information</a>
-         <div id="popup" class="popup">
-         <h2>Email Address</h2>
-         <h4 style="color: red;">
-          <p style="text-align:center;">ccacdsteensummit@gmail.com</p></h4> 
-           <a href="#" style="display: inline-block; 
-                       margin-top: 10px; padding: 5px 10px; 
-                       background-color: #dc3545; color: #fff; 
-                       text-decoration: none; border-radius: 3px;">Close</a>
-    </div>
-  </div>
-
   <div class="b"> 
     <p style="text-align: center;" style="color:#990000;"><span>Thank  You</span>Parents, Guardians, Visitors and Friends,<br>for helping to make </p>
     <h1 style="color:#990000;"><a class="ex2"><em>2025 TEEN SUMMIT A Success!</em></a></h1>
@@ -358,14 +329,11 @@ span{
     <p style="font-family:'Baskerville', Sans Serif;"><small>Before Anything Else, Preparation is the Key to Success!<br>~Alexander Graham Bell</small></p>
 </div>
   </div>  
-  <body style="text-align:center">
 
-<h2>Popup</h2>
-
-<div class="popup" onclick="myFunction()">Click me to toggle the popup!
-  <span class="popuptext" id="myPopup">A Simple Popup!</span>
-</div>
-
+   <body style="text-align:center">
+       <div class="popup" onclick="myFunction()">Click here for contact information!
+         <span class="popuptext" id="myPopup">ccacdstteensummit@gmail.com</span>
+       </div>
 <script>
 // When the user clicks on div, open the popup
 function myFunction() {
