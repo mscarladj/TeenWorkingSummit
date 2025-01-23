@@ -4,7 +4,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Teen Summit Resource</title>
 <style>
-@media only screen and (max-width: 700px)
+@media (min-width:320px)  { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ }
+@media (min-width:480px)  { /* smartphones, Android phones, landscape iPhone */ }
+@media (min-width:600px)  { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ }
+@media (min-width:801px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
+@media (min-width:1281px) { /* hi-res laptops and desktops */ }
+<!-- @media only screen and (max-width: 700px) -->
 
 body {font-family: Baskerville}
 
@@ -167,7 +173,7 @@ span{
 .popuptw .popuptext {
   visibility: hidden;
   width: 80px;
-  background-color: #555;
+  background-color: inherit;
   color: #fff;
   text-align: center;
   border-radius: 6px;
@@ -179,8 +185,8 @@ span{
   margin-left: -80px;
 }
 
-/* Popuptw arrow */
-.popuptw .popuptext::after {
+ /* Popuptw arrow */
+<!-- .popuptw .popuptext::after {
   content: "";
   position: absolute;
   top: 50%;
@@ -189,7 +195,7 @@ span{
   border-width: 30px;
   border-style: solid;
   border-color: #555 transparent transparent transparent;
-}
+} -->
 
 /* Toggle this class - hide and show the popuptw */
 .popuptw .show {
@@ -207,14 +213,15 @@ span{
 
 <body>  
  <div class="a"> 
-  <h1 style="color:#b30000;"><a class="ex2"><em>2025 TEEN SUMMIT<br>Parent Resource<br>/></em></a></h1>
+  <h1 style="color:#b30000;"><a class="ex2"><em>2025 TEEN SUMMIT<br>Parent Resource<br></em></a></h1>
 
    <div class="b">
     <p style="color:#000000;",style="font-size:5vw;"><a class="ex2"><em>Check out these Websites for Insightful Information!</em></a></p>
   </div>
- <!--    <div class="c">
-      <p style="color:#000000;",style="font-size:5vw;"><a class="ex2"><em>Check out these Social Media sites!</em></a></p>
-     </div> -->
+
+   <!--  <div class="c">
+         <p style="color:#000000;",style="font-size:5vw;"><a class="ex2"><em>Check out these Social Media sites!</em></a></p>
+         </div> -->
        
 <div class="bg-img">
  <div class="navbar">  <!-- /* START NAV-BAR */ -->
@@ -337,7 +344,7 @@ span{
          <span class="popuptext" id="myPopup">ccacdst.teensummit@gmail.com</span>
        </div>
 <script>
-// When the user clicks on div, open the popup
+// clicks on div the opens the popup
 function myFunction() {
   var popuptw = document.getElementById("myPopup");
   popuptw.classList.toggle("show");
