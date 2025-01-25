@@ -27,14 +27,8 @@ body {font-family: Baskerville}
   background-size: cover; 
 }
 
+  /*Navbar SECTION*/
   
-.navbar {
-  overflow: hidden;
-  background-color: #333;
-}
-
-/*Navbar SECTION*/
-
   .navbar {
   overflow: hidden;
   background-color: #990000;
@@ -102,7 +96,7 @@ body {font-family: Baskerville}
 
 /* END Navbar SECTION */
 
-  /* START 1st Pop Button SECTION-style */
+  /* START FBook Pop Button SECTION-style */
   .popup {
             display: none;
             position: fixed;
@@ -121,7 +115,7 @@ body {font-family: Baskerville}
         .popup:target {
             display: flex;
         }
-    /*  END 1st POPUP SECTION-style */
+    /*  END Fbook POPUP SECTION-style */
 
   /* Additional styles for content */
     h1 {
@@ -145,7 +139,8 @@ div.c {
 div.d {
   text-align: justify;
 } 
- /*This SECTION MANAGES hover-animate-colors*/  
+  
+/*This SECTION MANAGES hover-animate-colors*/  
 a.ex1:hover, a.ex1:active {color: dark red;}
 a.ex2:hover, a.ex2:active {font-size: 150%;}
 a.ex3:hover, a.ex3:active {background: light grey;}
@@ -160,7 +155,7 @@ span{
   font-family:algerian,courier;
   line-height:80%;
 }
- /* 2nd POPUP Section - popuptw */
+ /* 2nd POPUP email Section - popuptw */
   /* Popuptw container -change style */
 .popuptw  {
   position: relative;
@@ -204,9 +199,9 @@ span{
 .popuptw .show {
   visibility: visible;
   
-/* END 2nd POPUP Section - popuptw */ 
+/* END 2nd POPUP email Section - popuptw */ 
   
-/* START 3rd Pop click SECTION-style */
+/* START 3rd Pop clickqr SECTION-style */
   .popupth {
             display: none;
             position: fixed;
@@ -225,7 +220,7 @@ span{
         .popupth:target {
             display: flex;
         }
-    /*  END 3rd POPUP click SECTION-style */
+    /*  END 3rd POPUP clickqr SECTION-style */
 
 /* QR CODES SECTION - style */
   #myImg {
@@ -427,11 +422,11 @@ span{
    </div>  
 
   
- <div class="dropdown">
-    <a href="#popup" style="padding: 10px 20px; background-color: #990000; 
-                            color: #fff; text-decoration: none; border-radius: 5px;">Scan the QR codes for Scolarship Information!</a>
-      <div id="popup" class="popup">
-       <div class="popup-content">
+ <div class="dropdown-other">
+    <a href="#popupth" style="padding: 10px 20px; background-color: #990000; 
+                            color: #fff; text-decoration: none; border-radius: 5px;">Click for QR codes and Scholarship Info.!</a>
+      <div id="popupth" class="popupth">
+       <div class="popupth-content">
        
        <img id="myImg" src="https://github.com/mscarladj/WorkingRepo/blob/main/qrcode_test.jpg?raw=true" alt="Scan QR Codes" style="width:100%;max-width:300px">
         <p style="text-align:center;">Click the Image</p>
@@ -477,6 +472,7 @@ span{
 </div>
   </div>  
 
+    
   <body style="text-align:center">
       <div class="popuptw" onclick="myFunction()">Click here for contact information!
          <span class="popuptext" id="myPopup">ccacdst.teensummit@gmail.com</span>
@@ -490,12 +486,12 @@ function myFunction() {
 
 /* QR CODES SECTION -body */
 
-<!-- The Modal 
+<!-- The Modal -->
 <div id="myModal" class="modal">
   <span class="close">&times;</span>
   <img class="modal-content" id="img01">
   <div id="caption"></div>
-</div> -->
+</div>
 
 <script>
 // Get the modal
