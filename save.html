@@ -401,11 +401,12 @@ span{
       </div>
    </div>
 
-  <div class="dropdown-other">
+ <div class="dropdown">
     <a href="#popup" style="padding: 10px 20px; background-color: #990000; 
-                            color: #fff; text-decoration: none; border-radius: 5px;">Click for QR codes and more Scholarship Information!</a>
+                            color: #fff; text-decoration: none; border-radius: 5px;">Scan the QR codes for Scolarship Information!</a>
       <div id="popup" class="popup">
        <div class="popup-content">
+       
        <img id="myImg" src="https://github.com/mscarladj/WorkingRepo/blob/main/qrcode_test.jpg?raw=true" alt="Scan QR Codes" style="width:100%;max-width:300px">
         <p style="text-align:center;">Click the Image</p>
          <h4 style="color: Red;">
@@ -464,6 +465,38 @@ span.onclick = function() {
         position: relative;">  
     </div>   
  </div>
+
+   <!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById("myImg");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+</script>
+
+  /* END QR CODES SECTION -body*/
 
   <div class="b"> 
     <p style="text-align: center;" style="color:#990000;"><span>Thank  You</span>Parents, Guardians, Visitors and Friends,<br>for helping to make </p>
