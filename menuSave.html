@@ -130,6 +130,7 @@ div.d {
         }
     /*  END POPUP SECTION-style */
 
+/* QR CODES SECTION - style */
   #myImg {
   border-radius: 5px;
   cursor: pointer;
@@ -215,6 +216,9 @@ div.d {
     width: 100%;
   }
 }
+
+/* END QR CODES SECTION */
+  
 </style>
 </head>
 
@@ -276,7 +280,7 @@ div.d {
       <div id="popup" class="popup">
        <div class="popup-content">
        <h2>HTML Image</h2>
-       <img url(https://raw.githubusercontent.com/mscarladj/WorkingRepo/6167287c69c394886e0efc3c0fb1f47bbc50f536/successimage.svg);>
+       <img id="myImg" src="https://github.com/mscarladj/WorkingRepo/blob/main/qrcode_test.jpg?raw=true" alt="Scan QR Codes" style="width:100%;max-width:300px">
        <!-- height: 575px; width: 1200px; -->
           <h4 style="color: Purple;">
           <p style="text-align:center;">Connect by logging into your Facebook account and<br>typing in the title in your search browser.
@@ -336,7 +340,9 @@ DFW HBCU Connection')">Click Here</button>
 <h2>text-align: right:</h2>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.</p>
 </div>
+/* QR CODES SECTION -body */
 
+ <h2>Click the Image</h2>
 <img id="myImg" src="https://github.com/mscarladj/WorkingRepo/blob/main/qrcode_test.jpg?raw=true" alt="Scan QR Codes" style="width:100%;max-width:300px">
 
 <!-- The Modal -->
@@ -369,5 +375,7 @@ span.onclick = function() {
 }
 </script>
 
+  /* END QR CODES SECTION -body*/
+  
 </body>
 </html>
