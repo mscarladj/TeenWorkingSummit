@@ -115,7 +115,7 @@ body {font-family: Baskerville}
         .popup:target {
             display: flex;
         }
-    /*  END Fbook POPUP SECTION-style */
+  /*  END Fbook POPUP SECTION-style */
 
   /* Additional styles for content */
     h1 {
@@ -217,7 +217,7 @@ span{
             border-radius: 5px;
             text-align: center;
         }
-        .popupth:target {
+        .popup:target {
             display: flex;
         }
     /*  END 3rd POPUP clickqr SECTION-style */
@@ -231,7 +231,7 @@ span{
 
 #myImg:hover {opacity: 0.7;}
 
-/* The Model (background) */
+/* The Modal (background) */
 .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
@@ -246,7 +246,7 @@ span{
   background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
 }
 
-/* Model Content (image) */
+/* Modal Content (image) */
 .modal-content {
   margin: auto;
   display: block;
@@ -311,7 +311,7 @@ span{
 
 <!-- /* END QR CODES SECTION */ -->
   
-</style>
+ </style>
 </head>
 
 <!--  /* background page color */  -->
@@ -426,8 +426,10 @@ span{
     <a href="#popupth" style="padding: 10px 20px; background-color: #990000; 
                             color: #fff; text-decoration: none; border-radius: 5px;">Click for QR codes and Scholarship Info.!</a>
       <div id="myModal" class="modal">
+         <div id="popup" class="popup">
        <div class="modal"-content">
-       
+             <div class="popup-content">  
+        
        <img id="myImg" src="https://github.com/mscarladj/WorkingRepo/blob/main/qrcode_test.jpg?raw=true" alt="Scan QR Codes" style="width:100%;max-width:300px">
         <p style="text-align:center;">Click the Image</p>
          <h4 style="color: Red;">
@@ -437,6 +439,9 @@ span{
                        margin-top: 10px; padding: 5px 10px; 
                        background-color: #dc3545; color: #fff; 
                        text-decoration: none; border-radius: 3px;">Close</a>
+              </div>
+             </div>
+                
        </div>
       </div>
    </div>
