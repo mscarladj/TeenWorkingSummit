@@ -102,7 +102,7 @@ body {font-family: Baskerville}
 
 /* END Navbar SECTION */
 
-  /* START Pop Button SECTION-style */
+  /* START 1st Pop Button SECTION-style */
   .popup {
             display: none;
             position: fixed;
@@ -121,7 +121,7 @@ body {font-family: Baskerville}
         .popup:target {
             display: flex;
         }
-    /*  END POPUP SECTION-style */
+    /*  END 1st POPUP SECTION-style */
 
   /* Additional styles for content */
     h1 {
@@ -428,11 +428,15 @@ span{
 
   
    <div class="dropdown-other">
-    <a href="#popupth" style="padding: 10px 20px; background-color: #990000; 
+    <a href="#popup" style="padding: 10px 20px; background-color: #990000; 
                             color: #fff; text-decoration: none; border-radius: 5px;">Scan QR codes for more Info!</a>
-      <div id="popupth" class="popupth">
-       <div class="popupth-content">
-       
+      <!-- <div id="popupth" class="popupth"> <div class="popupth-content"> -->
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+      
        <img id="myImg" src="https://github.com/mscarladj/WorkingRepo/blob/main/qrcode_test.jpg?raw=true" alt="Scan QR Codes" style="width:100%;max-width:300px">
         <p style="text-align:center;">Click the Image</p>
          <h4 style="color: Red;">
@@ -442,61 +446,54 @@ span{
                        margin-top: 10px; padding: 5px 10px; 
                        background-color: #dc3545; color: #fff; 
                        text-decoration: none; border-radius: 3px;">Close</a>
+  </div>
        </div>
-      </div>
-   </div>
+      <!-- </div> </div> -->
+ </div> <!-- div for bg-image -->
 
-<body style="
-    height: 3000px;
-    padding-top: 60px;
-    padding-left: 80px;
-  ">
-    <div style="
-      background-color: gold;
-      color: red;
-      position: centered;
-      top: 0;
-      left: 10px;
-      right: 10px;
-      height: 50px;
-      z-index: 100;
-    ">
-      </div>
-      
-     
+ <div class="a">
+     <div style="
+        background-color:#990000;
+        border-style: inset;
+        float: none; 
+        height: -400px;
+        width:  -300px;
+        position: relative;">  
+    </div>   
+ </div>
 
+ 
+  <div class="b"> 
+    <p style="text-align: center;" style="color:#990000;"><span>Thank  You</span>Parents, Guardians, Visitors and Friends,<br>for helping to make </p>
+    <h1 style="color:#990000;"><a class="ex2"><em>2025 TEEN SUMMIT A Success!</em></a></h1>
+  </div>
 
-<h1 style="text-align:center;">2024 TEEN SUMMIT</h1>
-  
-
-<div class="a">
-<h4>You Got Next</h2>
-<h1>Face Book Groups</h1>
-<button type="button" onclick="alert('The Scholarship Club 
-                                      Black, Brown & HBCU Bound')">Click Here</button>
+  <!-- Quote #1 Section  -->
+  <div class="c"> 
+   <div style="
+      position: 
+      background-color: inherit;
+      color: #333333;
+      bottom: 600px;
+      right: 0px;
+   "> 
+    <p style="font-family:'Baskerville', Sans Serif;"><small>Before Anything Else, Preparation is the Key to Success!<br>~Alexander Graham Bell</small></p>
 </div>
+  </div>  
 
-<div class="b">
-<h2>text-align: left:</h2>
-<p> I would just list them with directions for them to search facebook for the names and join the groups if interested.</p>
-<h1>Check Out FaceBook Groups</h1>
-<button type="button" onclick="alert('The Scholarship Club
-Black, Brown & HBCU Bound
-College Ave
-HBCU Connect
-Common Black College Application
-Scholarship 101: Securing the Bag
-DFW HBCU Connection')">Click Here</button>
-</div>
+  <body style="text-align:center">
+      <div class="popuptw" onclick="myFunction()">Click here for contact information!
+         <span class="popuptext" id="myPopup">ccacdst.teensummit@gmail.com</span>
+       </div>
+<script>
+// clicks on div the opens the popup
+function myFunction() {
+  var popuptw = document.getElementById("myPopup");
+  popuptw.classList.toggle("show");
+}
 
-<div class="c">
-<h2>text-align: right:</h2>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.</p>
-</div>
 /* QR CODES SECTION -body */
 
- <h2>Click the Image</h2>
-<img id="myImg" src="https://github.com/mscarladj/WorkingRepo/blob/main/qrcode_test.jpg?raw=true" alt="Scan QR Codes" style="width:100%;max-width:300px">
 
 <!-- The Modal -->
 <div id="myModal" class="modal">
