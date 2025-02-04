@@ -4,6 +4,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
+  @media (min-width:320px)  { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ }
+  @media (min-width:480px)  { /* smartphones, Android phones, landscape iPhone */ }
+  @media (min-width:600px)  { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ }
+  @media (min-width:801px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ } 
+  @media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ } 
+  @media (min-width:1281px) { /* hi-res laptops and desktops */ } 
+  @media only screen and (max-width: 700px) 
+  
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -39,7 +47,7 @@ body {
 }
 
 .navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: red;
+  background-color: blue;
 }
 
 .dropdown-content {
@@ -129,6 +137,61 @@ div.d {
         }
     /*  END POPUP SECTION-style */
 
+/* Thank you section */
+span{
+  float: left;
+  width:0.7em;
+  font-size:400%;
+  font-family:algerian,courier;
+  line-height:80%;
+}
+
+/* 2nd POPUP Section - popuptw */
+  /* Popuptw container -change style */
+.popuptw  {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* The actual popuptw */
+.popuptw .popuptext {
+  visibility: hidden;
+  width: 80px;
+  background-color: inherit;
+  color: #fff;
+  text-align: center;
+  border-radius: 8px;
+  padding: 10px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+ /* Popuptw arrow */
+ .popuptw .popuptext::after {
+  content: "";
+  position: relative;
+  top: 50%;
+  left: 25%;
+  margin-left: -5px;
+  border-width: -5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+} 
+
+/* Toggle this class - hide and show the popuptw */
+.popuptw .show {
+  visibility: visible;
+  
+/* END 2nd POPUP Section - popuptw */
+  
 /* QR CODES SECTION - style */
   #myImg {
   border-radius: 5px;
@@ -223,18 +286,15 @@ div.d {
         padding-left: 20px; /* Adds some padding to the left for better readability */
      }
 
-  .spaced-sentence {
-   margin-bottom: 1em; /* Adjust the value as needed */
-  }
-
 </style>
 </head>
 
-<body style="background: linear-gradient(to bottom, #000000 5%, #ffffff 100%);
+    <body style="background: linear-gradient(to top, #000000 5%, #ffffff 100%);
 
-  <body>
+<body>
 
-<h3 class="a">Carla Davis :<br>Lead Sys Analyst, Security Liason, Business Data Steward,<br> Loves Technology and New Challenges!</h3>
+<h1 class="a">Carla Davis</h1>
+<h3 class="a">Lead Sys Analyst, Security Liason, Business Data Steward<br>Loves Technology and New Challenges!<br>24 years with AT&T</h3>
 
 <div class ="a">  
 <div class="navbar">
@@ -256,30 +316,27 @@ div.d {
           <p style="text-align:center;">8 different Job Titles and Roles in 24 years!</p></h4> 
     </div>
   </div> 
-  
+
   <div class="dropdown">
-    <button class="dropbtn">Training/Certificates - Continuous Learner
+    <button class="dropbtn">Training/Certificates - Continuous Learner!
       <i class="fa fa-caret-down"></i>
     </button>
     <div class="dropdown-content">
-        <ul> <p style="color:#e6e6e6;",style="font-size:5vw;"><a class="ex2"><small>
-              <li style="text-align: center;">Completed over 10+ hours of training in Cybersecurity.</li>
-              <li style="text-align: center;">Completed over 6+ hours of training in Power Bi and Power Automate.</li>
-              <li style="text-align: center;">Completed over 17+ hours of training in Artificial Intelligence and Generative AI disciplines.</li>
-              <li style="text-align: center;">Completed over 6+ hours of training in JSON and Node.js</li>
-              <li style="text-align: center;">Completed over 15+ hours of training in Azure Fundamentals and Administration.</li>
-              <li style="text-align: center;">Microsoft Certified: Azure Fundamentals - MS AZ, Microsoft Azure Administrator - MS AZ Training</li>
-              <li style="text-align: center;">Data Engineer/ Data Analytics & Big Data Development Program - AT&T University</li>
-              <li style="text-align: center;">Data Science: Data Science Advanced - AT&T University</li>
-              <li style="text-align: center;"> Strategic Business Transformation/Business Solutions – Business Solutions Training</li>
-              <li style="text-align: center;"> Software Defined Network (SDN) - Advanced Level -- AT&T University</li>
-              <li style="text-align: center;">Agile PG/PM From - AT&T University</li>
-              <li style="text-align: center;">Technical Project/Program Management,Customer Facing Project/Program Management</li>
-              <li style="text-align: center;">Basic Technical Domain Knowledge, Program Manager,Deployment & Development Project Mgr.</li> 
-              <li style="text-align: center;">Agile Program/Project Management - Agile Development</li>
-              <li style="text-align: center;">API - API Bronze - IT Sourcing Training, Big Data/ Bronze - IT Sourcing Training</li>
-              <li style="text-align: center;">(QMS) Green Belt Growth Program - QMS Six Sigma Green Belt</li>
-             </small></a></p>
+    <p style="color:#e6e6e6;",style="font-size:5vw;"><a class="ex2"></p>
+      <ul style="color: black;">
+              <li style="text-align: center;"><small>Completed over 10+ hours of training in Cybersecurity.</small></li>
+              <li style="text-align: center;"><small>Completed over 6+ hours of training in Power Bi and Power Automate.</small></li>
+              <li style="text-align: center;"><small>Completed over 17+ hours of training in Artificial Intelligence and Generative AI disciplines.</small></li>
+              <li style="text-align: center;"><small>Completed over 6+ hours of training in JSON and Node.js</small></li>
+              <li style="text-align: center;"><small>Completed over 15+ hours of training in Azure Fundamentals and Administration.</small></li>
+              <li style="text-align: left;"><small>Microsoft Certified: Azure Fundamentals & Microsoft Azure Administrator</small></li>
+              <li style="text-align: left;"><small>Data Engineer/ Data Analytics & Big Data Development Program - AT&T University</small></li>
+              <li style="text-align: left;"><small>Data Science: Data Science Advanced - AT&T University</small></li>
+              <li style="text-align: left;"><small>Strategic Business Transformation/Business Solutions – Business Solutions Training</small></li>
+              <li style="text-align: left;"><small>Software Defined Network (SDN) - Advanced Level -- AT&T University</small></li>
+              <li style="text-align: left;"><small>Agile PG/PM From - AT&T University</small></li>
+              <li style="text-align: left;"><small>API - API Bronze & Big Data/ Bronze - IT Sourcing Training</small></li>
+              <li style="text-align: left;"><small>QMS Six Sigma Green Belt</small></li>
         </ul>
      </div>
   </div> 
@@ -290,9 +347,9 @@ div.d {
     </button>
     <div class="dropdown-content">
        <ul style="color: black;"> 
-        <li style="text-align: center;" class="spaced-sentence;">Starting from scratch to develop and support the IST (E2E) Test Calendar for a Kintana Ban Expansion Project, for over 200 front end and middleware applications.
+        <li style="text-align: left;">Starting from scratch to develop and support the IST (E2E) Test Calendar for a Kintana Ban Expansion Project, for over 200 front end and middleware applications.
          <br>It was quite robust, filled with all activity for activations, usage processing and billing.</li>
-        <li style="text-align: center;" class="spaced-sentence;">Being selected to work in the official war room for the first I-Phone launch! Working with live PVT testing and production for activations and billing.</li>
+        <li style="text-align: left;">Being selected to work in the official war room for the first {ACME}I-Phone launch!<br>Working with live PVT accounts, testing and production for activations and billing was exciting!</li>
       </ul> 
     </div>
   </div> 
@@ -306,7 +363,7 @@ div.d {
        
        <img id="myImg" src="https://raw.githubusercontent.com/mscarladj/WorkingRepo/d308b128b8b2cfd155754bdc528a746922ba9c4c/skills_resume.svg" alt="Skills!" style="width:100%;max-width:300px">
         <p style="text-align:center;">Click the Image</p>
-         <h4 style="color: Red;">
+         <h4 style="color: blue;">
           <p style="text-align:center;">Here is a list of <br>Coding Disciplines Applications and Tools<br>that I have enjoyed learning and utilizing<br>during my 24 years with AT&T!</p></h4> 
            <a href="#" style="display: inline-block; 
                        margin-top: 10px; padding: 5px 10px; 
@@ -333,30 +390,27 @@ div.d {
     ">
       </div>
       
-     
-
-
-<h1 style="text-align:center;">Curious and Continuous Learner</h1>
-  
-
+    
+<h1 style="text-align:center;">Knowledge Seeker and Lifelong Learner!</h1>
+ 
 <div class="a">
-<h1>Technical, analytical, problem-solving and management skills!</h1>
+<h1>Technical and Detail-Oriented!</h1>
 </div>
 
+<h2 style="text-align:left;">Problem-Solving Skills!</h2> <h2 style="text-align:center;">Management Skills!</h2>  <h2 style="text-align:right;">Analytical Skills!</h2>
+  
 <div class="a">
 <h1>Highly motivated and Goal-oriented!</h1>
 </div>
 
 <div class="b">
-<h2>Giving back to the Community is Essential</h2>
-<p>Supporting and Giving time to others through "AT&T Believes" is very important to me!</p>
+<h2><em></em>Giving back to the Community is Essential...</em></h2>
+<p>Supporting and Giving time to others<br>through "AT&T Believes"<br>is very important to me!</p>
 </div>
 
   
-/* QR CODES SECTION -body */
-
- <h2>Click the Image</h2>
-<img id="myImg" src="https://github.com/mscarladj/WorkingRepo/blob/main/qrcode_test.jpg?raw=true" alt="Scan QR Codes" style="width:100%;max-width:300px">
+  
+<!--/* QR CODES SECTION -body */ -->
 
 <!-- The Modal -->
 <div id="myModal" class="modal">
@@ -390,9 +444,13 @@ span.onclick = function() {
 
   /* END QR CODES SECTION -body*/
 
-    <!-- Quote #1 Section  -->
+  <div class="a"> 
+    <p style="text-align: center;" style="color:#990000;"><span>Thank You</span></p>
+    <h1 style="color:#990000;"><a class="ex2"><em>For taking time to spend with me, on my journey to find my next great opportunity!</em></a></h1>
+  </div>
+
+  <!-- Quote #1 Section  -->
   <div class="c"> 
-  <h2>One of my favorite quotes!</h2>
    <div style="
       position: 
       background-color: inherit;
@@ -402,7 +460,21 @@ span.onclick = function() {
    "> 
     <p style="font-family:'Baskerville', Sans Serif;"><small>Before Anything Else, Preparation is the Key to Success!<br>~Alexander Graham Bell</small></p>
 </div>
-  </div> 
+  </div>  
+
+  <body style="text-align:center">
+      <div class="popuptw" onclick="myFunction()">Click here for contact information!
+         <span class="popuptext" id="myPopup">cd1916@att.com or mscarladj@gmail.com</span>
+         <span class="popuptext" id="myPopup">Cell: 214-502-4279</span>
+       </div>
+<script>
+// clicks on div the opens the popup
+function myFunction() {
+  var popuptw = document.getElementById("myPopup");
+  popuptw.classList.toggle("show");
+}
+</script>
+
   
 </body>
 </html>
