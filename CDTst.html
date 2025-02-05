@@ -18,7 +18,7 @@ body {
 
 .navbar {
   overflow: hidden;
-  background-color: #purple;
+  background-color: blue;
 }
 
 .navbar a {
@@ -93,28 +93,6 @@ div.d {
   text-align: justify;
 } 
   <!-- THIS SECTION for the Background -->
-.cov-image {
-      background-size: cover; /* or 'contain or cover' based on your preference */
-      height: 500px; /* Maintain aspect ratio, had 500px */
-      background-repeat: no-repeat;
-      background-position: center;
-      background-color: teal;
-      }
-  
-   .cov-text {
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: gold;
-    }
-
-/* Additional styles for content */
-    h1 {
-      color: #ffffff;
-      text-align: center;
-    }
 
   /* START Pop Button SECTION-style */
   .popup {
@@ -137,11 +115,19 @@ div.d {
         }
     /*  END POPUP SECTION-style */
 
+/*This SECTION MANAGES hover-animate-colors*/  
+a.ex1:hover, a.ex1:active {color: dark red;}
+a.ex2:hover, a.ex2:active {font-size: 150%;}
+a.ex3:hover, a.ex3:active {background: light grey;}
+a.ex6:hover, a.ex6:active {background: white;}  
+/*This SECTION MANAGES hover-animate-colors*/ 
+  
 /* Thank you section */
 span{
   float: left;
   width:0.7em;
   font-size:300%;
+  color: blue;
   font-family:algerian,courier;
   line-height:80%;
 }
@@ -316,17 +302,15 @@ tr:nth-child(even) {
   </div>
 
    <div class="c">
-    <p style="color:#e6e6e6;",style="font-size:5vw;"><a class="ex2"><em>Collaborative team member!</em>!></p>
+    <p style="color:#e6e6e6;",style="font-size:5vw;"><a class="ex2"><em>Collaborative team member!</em></a></p>
   </div>    
       
-<div class ="a">  
 <div class="navbar">
   <div class="dropdown">
     <button class="dropbtn">Job Titles/Roles Over the Years
       <i class="fa fa-caret-down"></i>
     </button>
-    <div class="dropdown-content">
-    <p style="color:#e6e6e6;",style="font-size:5vw;"><a class="ex2"></p>
+ <div class="dropdown-content">
       <ul style="color: black;"> 
            <li style="text-align: left;",list-style-type: disc;>Lead Systems Analyst - within Finance Capitol</li> 
            <li style="text-align: left;",list-style-type: disc;>Lead Billing Ops & Supervisor - within Billings OPS Finance</li>
@@ -371,7 +355,7 @@ tr:nth-child(even) {
     <button class="dropbtn">Favorite Work Memories! 
       <i class="fa fa-caret-down"></i>
     </button>
-    <div class="dropdown-content">
+<div class="dropdown-content">
        <h4>Most Favorite!</h4>
        <p style="color: black;">Being selected to work in the official war room for the first {ACME}I-Phone launch! Working with live PVT accounts, testing and production for activations and billing was exciting!</p>
    <hr>
@@ -431,11 +415,12 @@ tr:nth-child(even) {
 </div>
 
 <div class="b">
-<h3><em>Giving back to the Community is Essential</em></h3>
-<hr>
-<p style="text-align:center;">Giving time to help others<br>through "AT&T Believes"<br>has been rewarding,<br>and is very important to me!</p>
+<h3><em>Giving back to the community is Essential<hr><br>Giving time to help others<br>through "AT&T Believes"<br>has been rewarding,<br>and is very important to me!</em></h3>
 </div>
 
+<div class="c">
+<h3><em>Giving my best effort is a Priority<hr><br>Giving your best while working with others, adds a great benefit to the team and the tasks at hand!</em></h3>
+</div>  
   
   
 <!-- /* QR CODES SECTION -body */ -->
@@ -472,7 +457,7 @@ span.onclick = function() {
 <!--   /* END QR CODES SECTION -body*/ -->
 
  
-    <p style="text-align: left;",style="color:#000099;"><span>Thank You</span></p>
+    <p style="text-align: left;"><span>Thank You</span></p>
     <h4 style="text-align: center;",style="color:#000099;"><a class="ex2"><em>For taking time to spend with me, on my journey to find my next great opportunity!</em></a></h4>
  
 
@@ -493,7 +478,7 @@ span.onclick = function() {
     <!-- Quote #1 Section  -->
   <div class="c"> 
    <div style="
-      background-color: grey;
+      background-color: blue;
       color: #333333;
       bottom: 600px;
       right: 0px;
