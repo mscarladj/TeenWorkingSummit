@@ -11,7 +11,7 @@ body {
   
 .navbar {
   overflow: hidden;
-  background-color: blue;
+  background-color: #333;
 }
 
 .navbar a {
@@ -23,30 +23,24 @@ body {
   text-decoration: none;
 }
 
-  .dropdown-other {
-   float: right;
-   overflow: hidden;
-   margin-top: 0;
-}
-  
 .dropdown {
-  float: center;
+  float: left;
   overflow: hidden;
 }
 
-.dropdown .dropbtn {   <!-- this is the rectangular button on the bar -->
+.dropdown .dropbtn {
   font-size: 16px;  
   border: none;
   outline: none;
   color: white;
   padding: 14px 16px;
-  background-color: blue;
+  background-color: inherit;
   font-family: inherit;
   margin-top: 30px;
 }
 
 .navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: blue;
+  background-color: red;
 }
 
 .dropdown-content {
@@ -68,7 +62,7 @@ body {
 }
 
 .dropdown-content a:hover {
-  background-color: #d6e0f5;
+  background-color: #ddd;
 }
 
 .dropdown:hover .dropdown-content {
