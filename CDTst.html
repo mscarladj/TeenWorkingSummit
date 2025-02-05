@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,9 +8,9 @@
   @media (min-width:480px)  { /* smartphones, Android phones, landscape iPhone */ }
   @media (min-width:600px)  { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ }
   @media (min-width:801px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ } 
-  @media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ } 
-  @media (min-width:1281px) { /* hi-res laptops and desktops */ } 
-  @media only screen and (max-width: 700px) 
+  <!-- @media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ } -->
+  <!-- @media (min-width:1281px) { /* hi-res laptops and desktops */ } -->
+  <!-- @media only screen and (max-width: 700px) -->
   
 body {
   font-family: Arial, Helvetica, sans-serif;
@@ -145,52 +145,6 @@ span{
   font-family:algerian,courier;
   line-height:80%;
 }
-
-/* 2nd POPUP Section - popuptw */
-  /* Popuptw container -change style */
-.popuptw  {
-  position: relative;
-  display: inline-block;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-/* The actual popuptw */
-.popuptw .popuptext {
-  visibility: hidden;
-  width: 80px;
-  background-color: inherit;
-  color: #fff;
-  text-align: center;
-  border-radius: 8px;
-  padding: 10px 0;
-  position: absolute;
-  z-index: 1;
-  bottom: 125%;
-  left: 50%;
-  margin-left: -80px;
-}
-
- /* Popuptw arrow */
- .popuptw .popuptext::after {
-  content: "";
-  position: relative;
-  top: 50%;
-  left: 25%;
-  margin-left: -5px;
-  border-width: -5px;
-  border-style: solid;
-  border-color: #555 transparent transparent transparent;
-} 
-
-/* Toggle this class - hide and show the popuptw */
-.popuptw .show {
-  visibility: visible;
-  
-/* END 2nd POPUP Section - popuptw */
   
 /* QR CODES SECTION - style */
   #myImg {
@@ -301,6 +255,51 @@ td, th {
 tr:nth-child(even) {
   background-color: #dddddd;
 }  
+  /* 2nd POPUP Section - popuptw */
+  /* Popuptw container -change style */
+.popuptw  {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* The actual popuptw */
+.popuptw .popuptext {
+  visibility: hidden;
+  width: 80px;
+  background-color: inherit;
+  color: #fff;
+  text-align: center;
+  border-radius: 8px;
+  padding: 10px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+ /* Popuptw arrow */
+ .popuptw .popuptext::after {
+  content: "";
+  position: relative;
+  top: 50%;
+  left: 25%;
+  margin-left: -5px;
+  border-width: -5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+} 
+
+/* Toggle this class - hide and show the popuptw */
+.popuptw .show {
+  visibility: visible;
+  
+/* END 2nd POPUP Section - popuptw */
 </style>  <!-- -------------------------------------------END Style and Header------------------START BODY---------------------------------------------------------------------------------------------------- -->
 </head>
 
@@ -473,10 +472,10 @@ span.onclick = function() {
 
   /* END QR CODES SECTION -body*/
 
-  <div class="a"> 
-    <p style="text-align: center;" style="color:#990000;"><span>Thank You</span></p>
-    <h1 style="color:#990000;"><a class="ex2"><em>For taking time to spend with me, on my journey to find my next great opportunity!</em></a></h1>
-  </div>
+ 
+    <p style="text-align: left;",style="color:#000099;"><span>Thank You</span></p>
+    <h5 style="text-align: center;",style="color:#000099;"><a class="ex2"><em>For taking time to spend with me, on my journey to find my next great opportunity!</em></a></h5>
+ 
 
   <!-- Quote #1 Section  -->
   <div class="c"> 
@@ -491,20 +490,21 @@ span.onclick = function() {
 </div>
   </div>  
 
-  <body style="text-align:center">
-      <div class="popuptw" onclick="myFunction()">Click here for contact information!
-         <span class="popuptext" id="myPopup">cd1916@att.com or mscarladj@gmail.com</span>
-         <span class="popuptext" id="myPopup">Cell: 214-502-4279</span>
-       </div>
-<script>
-// clicks on div the opens the popup
-function myFunction() {
-  var popuptw = document.getElementById("myPopup");
-  popuptw.classList.toggle("show");
-}
-</script>
-
+    <body style="text-align:center">
+        <div class="popuptw" onclick="myFunction()">Click here for contact information!
+           <h4 class="popuptext" id="myPopup"><small>cd1916@att.com or mscarladj@gmail.com</small></h4>
+           <h5 class="popuptext" id="myPopup"><small>Cell: 214-502-4279</small></h5>
+         </div>
+      <script>
+      // clicks on div the opens the popup
+        function myFunction() {
+        var popuptw = document.getElementById("myPopup");
+        popuptw.classList.toggle("show");
+        }
+      </script>
+    </body>
   
-</body>
+  
+  </body>
 </html>
 
