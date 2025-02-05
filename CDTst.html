@@ -1,4 +1,4 @@
-  <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,7 +15,9 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
-
+  
+/*Navbar SECTION*/
+  
 .navbar {
   overflow: hidden;
   background-color: blue;
@@ -30,8 +32,14 @@ body {
   text-decoration: none;
 }
 
+  .dropdown-other {
+   float: right;
+   overflow: hidden;
+   margin-top: 0;
+}
+  
 .dropdown {
-  float: left;
+  float: center;
   overflow: hidden;
 }
 
@@ -75,7 +83,14 @@ body {
 .dropdown:hover .dropdown-content {
   display: block;
 }
+/* END Navbar SECTION */
 
+/* Additional styles for content */
+    h1 {
+      color: #ffbb80;
+      text-align: center;
+    }  
+  
 <!-- THIS SECTION manages the alignment through class -->  
 div.a {
   text-align: center;
@@ -131,6 +146,52 @@ span{
   font-family:algerian,courier;
   line-height:80%;
 }
+
+/* 2nd POPUP Section - popuptw */
+  /* Popuptw container -change style */
+.popuptw  {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* The actual popuptw */
+.popuptw .popuptext {
+  visibility: hidden;
+  width: 80px;
+  background-color: inherit;
+  color: #fff;
+  text-align: center;
+  border-radius: 8px;
+  padding: 10px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+ /* Popuptw arrow */
+ .popuptw .popuptext::after {
+  content: "";
+  position: relative;
+  top: 50%;
+  left: 25%;
+  margin-left: -5px;
+  border-width: -5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+} 
+
+/* Toggle this class - hide and show the popuptw */
+.popuptw .show {
+  visibility: visible;
+  
+/* END 2nd POPUP Section - popuptw */  
   
 /* Skills SECTION - style */
   #myImg {
@@ -241,59 +302,16 @@ td, th {
 tr:nth-child(even) {
   background-color: #e6e6ff;
 }  
-  /* 2nd POPUP Section - popuptw */
-  /* Popuptw container -change style */
-.popuptw  {
-  position: relative;
-  display: inline-block;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-/* The actual popuptw */
-.popuptw .popuptext {
-  visibility: hidden;
-  width: 80px;
-  background-color: inherit;
-  color: #fff;
-  text-align: center;
-  border-radius: 8px;
-  padding: 10px 0;
-  position: absolute;
-  z-index: 1;
-  bottom: 125%;
-  left: 50%;
-  margin-left: -80px;
-}
-
- /* Popuptw arrow */
- .popuptw .popuptext::after {
-  content: "";
-  position: relative;
-  top: 50%;
-  left: 25%;
-  margin-left: -5px;
-  border-width: -5px;
-  border-style: solid;
-  border-color: #555 transparent transparent transparent;
-} 
-
-/* Toggle this class - hide and show the popuptw */
-.popuptw .show {
-  visibility: visible;
-  
-/* END 2nd POPUP Section - popuptw */
+ 
 </style>  <!-- -------------------------------------------END Style and Header------------------START BODY---------------------------------------------------------------------------------------------------- -->
 </head>
 
-    <body style="background: linear-gradient(to bottom, #000000 0%, #ffffff 97%);
+   div {
+    background: linear-gradient(to top, #333333 0%, #99ccff 97%);
+    }
 
 <body>
-      
- <div class="a"> 
+  <div class="a"> 
   <h1 style="color:#e6e6e6;",style="font-size:5vw;"><a class="ex2"><em>Carla Davis<br>Lead Sys Analyst, Security Liason, Business Data Steward<br></em></a></h1>
  </div>
   
@@ -312,8 +330,8 @@ tr:nth-child(even) {
     </button>
  <div class="dropdown-content">
       <ul style="color: black;"> 
-           <li style="text-align: left;",list-style-type: disc;>Lead Systems Analyst - within Finance Capitol</li> 
-           <li style="text-align: left;",list-style-type: disc;>Lead Billing Ops & Supervisor - within Billings OPS Finance</li>
+           <li style="text-align: left;","list-style-type: disc;">Lead Systems Analyst - within Finance Capitol</li> 
+           <li style="text-align: left;","list-style-type: disc;">Lead Billing Ops & Supervisor - within Billings OPS Finance</li>
            <li style="text-align: left;",list-style-type: disc;>Information Technology Supervisor - Mediation Operations for Telegence and CARE Billing Systems</li>
            <li style="text-align: left;",list-style-type: disc;>Information Technology Associate Manager - within Telegence & U-verse Billing Systems</li>
            <li style="text-align: left;",list-style-type: disc;>Information Technology Analyst & Senior IT Analyst - within IT CIBER, Guiding and Rating, ETQC AR/Billing/MAF/MPS, IST and E2E Testing</li>
@@ -357,11 +375,11 @@ tr:nth-child(even) {
     </button>
 <div class="dropdown-content">
        <h4>Most Favorite!</h4>
-       <p style="color: black;">Being selected to work in the official war room for the first {ACME}I-Phone launch! Working with live PVT accounts, testing and production for activations and billing was exciting!</p>
+       <h5 style="color: black;">Being selected to work in the official war room for the first<br>{ACME}I-Phone launch! Working with live PVT accounts,<br> testing and production for activations<br>and billing was exciting!</h5>
    <hr>
       <h4>Second Most Favorite!</h4>
-        <p style="color: black;">Starting from scratch to develop and support the IST (E2E) Test Calendar for a Kintana Ban Expansion Project, for over 200 front end and middleware applications.
-         It was quite robust, filled with all activity for activations, usage processing and billing.</p>
+        <h5 style="color: black;">Starting from scratch to develop and support the IST (E2E) Test Calendar<br>for a Kintana Ban Expansion Project, for over<br>200 front end and middleware applications.<br>
+         It was quite robust, filled<br>with all activity for activations, usage processing and billing.</h5>
     </div> 
 </div>
 
@@ -391,7 +409,7 @@ tr:nth-child(even) {
     padding-left: 80px;
   ">
     <div style="      
-      background-color: blue;
+      background-color: gold;
       position: centered;
       top: 0;
       left: 10px;
@@ -415,12 +433,9 @@ tr:nth-child(even) {
 </div>
 
 <div class="b">
-<h3><em>Giving back to the community is Essential<hr><br>Giving time to help others<br>through "AT&T Believes"<br>has been rewarding,<br>and is very important to me!</em></h3>
+<h3><em>Giving back to the community is Essential&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Giving my best effort is a Priority  
+<hr><br>Giving time to help others<br>through "AT&T Believes"<br>has been rewarding,<br>and is very important to me!&emsp;&emsp;&emsp;&emsp;&emspGiving my best effort is a Priority<hr><br>Giving your best while working with others, adds a great benefit to the team and the tasks at hand!</em></h3>
 </div>
-
-<div class="c">
-<h3><em>Giving my best effort is a Priority<hr><br>Giving your best while working with others, adds a great benefit to the team and the tasks at hand!</em></h3>
-</div>  
   
   
 <!-- /* QR CODES SECTION -body */ -->
@@ -461,7 +476,7 @@ span.onclick = function() {
     <h4 style="text-align: center;",style="color:#000099;"><a class="ex2"><em>For taking time to spend with me, on my journey to find my next great opportunity!</em></a></h4>
  
 
-    <body style="text-align:center",style="color:#000099;">
+    <body style="text-align:right",style="color:#000099;">
         <div class="popuptw" onclick="myFunction()">Click here for contact information!
            <h4 class="popuptext" id="myPopup"><small>cd1916@att.com or mscarladj@gmail.com</small></h4>
            <h5 class="popuptext" id="myPopup"><small>Cell: 214-502-4279</small></h5>
