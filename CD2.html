@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta charset="UTF-8"> 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">  
@@ -10,9 +11,36 @@
 @media (min-width:600px)  { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ }
 body {
   font-family: Arial, Helvetica, sans-serif;
+  margin:0;
+  overflow:hidden;
  } 
-  
 
+  /* Siding bar SECTION */
+ .slider-container {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  background-color: #f0f0f0;
+  overflow: hidden;
+   }
+ .sliding-bar {
+  position: absolute;
+  width: 200px;
+  height: 100%;
+  background-color: #3498db;
+  animation: slide 3s linear infinite;
+      }
+  @keyframes slide {
+      from {
+      left: -200px;
+         }
+     to {
+       left: 100%;
+     }
+   }
+
+/*END Siding bar SECTION*/
+  
 /*Navbar SECTION*/
   
 .navbar {
@@ -94,7 +122,7 @@ div.d {
 } 
 
 /*This SECTION MANAGES hover-animate-colors*/  
-a.ex1:hover, a.ex1:active {color: dark red;}
+a.ex1:hover, a.ex1:active {color: dark blue;}
 a.ex2:hover, a.ex2:active {font-size: 150%;}
 a.ex3:hover, a.ex3:active {background: light grey;}
 a.ex6:hover, a.ex6:active {background: white;}  
@@ -269,10 +297,14 @@ td, th {
 tr:nth-child(even) {
   background-color: #e6e6ff;
 }  
- 
+
 </style>  <!-- -------------------------------------------END Style and Header------------------START BODY---------------------------------------------------------------------------------------------------- -->
 </head>
 
+<div class="slider-container">
+        <div class="sliding-bar"></div>
+    </div>
+  
 <!--  /* background page color */  -->
 <body style="background: linear-gradient(to bottom, #000000 8%, #ffffff 99%);>
 
@@ -290,6 +322,11 @@ tr:nth-child(even) {
    <div class="c">
     <p style="color:#ffffff;",style="font-size:5vw;"><a class="ex2"><em>Collaborative team member!</em></a></p>
   </div>    
+
+<div class="slider-container">
+    <div class="sliding-bar"></div>
+  </div>
+
   
 <div class="navbar">
   <div class="dropdown">
@@ -316,16 +353,16 @@ tr:nth-child(even) {
     </button>
     <div class="dropdown-content">
      <h5 style="color: Blue;">Top 10 Training Endeavors!</h5>
-          <h6>Completed over 10+ hours of training in Cybersecurity.</h6>
-          <h6>Completed over 6+ hours of training in Power Bi and Power Automate.</h6>
-          <h6>Completed over 17+ hours of training in Artificial Intelligence and Generative AI disciplines.</h6>
-          <h6>Completed over 6+ hours of training in JSON and Node.js</h6>
-          <h6>>Completed over 15+ hours of training in Azure Fundamentals and Administration.</h6>
-          <h6>>Microsoft Certified: Azure Fundamentals & Microsoft Azure Administrator</h6>
-          <h6>>Data Engineer, Data Analytics & Big Data Development Program - AT&T University</h6>
-          <h6>>Data Science & Data Science Advanced - AT&T University</h6>
-          <h6>Software Defined Network (SDN) - Advanced Level -- AT&T University</h6>
-          <h6>Agile PG/PM - AT&T University</h6>
+          <h6>~Completed over 10+ hours of training in Cybersecurity.</h6>
+          <h6>~Completed over 6+ hours of training in Power Bi and Power Automate.</h6>
+          <h6>~Completed over 17+ hours of training in Artificial Intelligence and Generative AI disciplines.</h6>
+          <h6>~Completed over 6+ hours of training in JSON and Node.js</h6>
+          <h6>~Completed over 15+ hours of training in Azure Fundamentals and Administration.</h6>
+          <h6>~Microsoft Certified: Azure Fundamentals & Microsoft Azure Administrator</h6>
+          <h6>~Data Engineer, Data Analytics & Big Data Development Program - AT&T University</h6>
+          <h6>~Data Science & Data Science Advanced - AT&T University</h6>
+          <h6>~Software Defined Network (SDN) - Advanced Level -- AT&T University</h6>
+          <h6>~Agile PG/PM - AT&T University</h6>
      </div>
   </div> 
   
@@ -342,6 +379,11 @@ tr:nth-child(even) {
          It was quite robust, filled<br>with all activity for activations, usage processing and billing.</h6>
     </div> 
 </div>
+
+  <div class="slider-container">
+        <div class="sliding-bar"></div>
+    </div>
+
 
    <div class="dropdown">
     <a href="#popup" style="padding: 10px 20px; background-color: #990000; 
@@ -394,12 +436,18 @@ tr:nth-child(even) {
 
  <h2 style="text-align:left;">Problem-Solving Skills!</h2> <h2 style="text-align:center;">Management Skills!</h2> <h2 style="text-align:right;">Analytical Skills!</h2>
 
+<div class="slider-container">
+        <div class="sliding-bar"></div>
+    </div>
   
 
   <div class="a">
   <h1>Highly motivated and Goal-oriented!</h1>
   </div>
 
+<div class="slider-container">
+        <div class="sliding-bar"></div>
+    </div>
 
   
   <BR>
@@ -445,7 +493,11 @@ span.onclick = function() {
 
  <p style="text-align: left;"><span>Thank You</span></p>
  <h5 style="text-align: center;",style="color:#000099;"><a class="ex2"><em>For taking time to spend with me, on my journey to find my next great opportunity!</em></a></h5>
-   
+
+  <div class="slider-container">
+        <div class="sliding-bar"></div>
+    </div>
+  
   
 </body>
 </html>
