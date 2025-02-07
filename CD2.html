@@ -33,8 +33,8 @@
   position: absolute;
   width: 200px;
   height: 100%;
-  background-color: silver;
-  animation: slide 5s linear infinite;
+  background-color: Gold;
+  animation: slide 9s linear infinite;
       }
   @keyframes slide {
       from {
@@ -48,36 +48,42 @@
 /*END Siding bar SECTION*/
 
 /*circle bounce SECTION*/  
-          .circle {
+             .circle {
             width: 50px;
             height: 50px;
-            background-color: #0000b3;
+            background-color: #e74c3c;
             border-radius: 50%;
             position: absolute;
-            left: 0;
-            animation: bounce 3s infinite ease-in-out;
+            animation: moveRight 5s linear infinite, bounce 1s ease-in-out infinite alternate;
         }
-          .sliding-text {
+         .sliding-text {
             position: absolute;
             white-space: nowrap;
-            color: light blue;
+            color: Gold;
             font-size: 24px;
             font-weight: bold;
-            animation: slide 5s linear infinite;
+            animation: slide 12s linear infinite;
         }
-        @keyframes bounce {
-            0% {
+        @keyframes moveRight {
+            from {
                 left: 0;
             }
-            50% {
-                left: 50%;
-                transform: translateX(-50%);
-            }
-            100% {
+            to {
                 left: 100%;
-                transform: translateX(-100%);
             }
         }
+        @keyframes bounce {
+            from {
+                top: 50%;
+                transform: translateY(-50%);
+            }
+            to {
+                top: 30%;
+                transform: translateY(-30%);
+            }
+        }
+          
+       
 /*circle bounce SECTION*/ 
   
 /*Navbar SECTION*/
@@ -484,9 +490,13 @@ tr:nth-child(even) {
   
   <BR>
   <hr>
-  <h6 style="font-family: Times New Roman;",style="text-align: left;",height="100vh;"><em>Giving back to the community is Essential</em><br>Giving time to help others<br>through "AT&T Believes"<br>has been rewarding,<br>and is very important to me!</h6>
-  <h6 style="text-align: right;",style="font-family: Times New Roman;",height="100vh;"><em>Giving my best effort is a Priority</em><br>Giving my best while working<br>with others, is beneficial<br>to the team and the tasks at hand!</h6>
+  <div class="c" height="100vh;">
+  <h6 style="font-family: Times New Roman;",style="text-align: left;"><em>Giving back to the community is Essential</em><br>Giving time to help others<br>through "AT&T Believes"<br>has been rewarding,<br>and is very important to me!</h6>
+  <h6 style="text-align: right;",style="font-family: Times New Roman;"><em>Giving my best effort is a Priority</em><br>Giving my best while working<br>with others, is beneficial<br>to the team and the tasks at hand!</h6>
+  </div> 
   <hr> 
+
+    
 
 
 <!-- /* Skills SECTION -body */ -->
