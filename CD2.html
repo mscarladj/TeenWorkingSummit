@@ -53,8 +53,9 @@
             height: 50px;
             background-color: #000099;
             border-radius: 50%;
-            position: absolute;
-            animation: moveRight 5s linear infinite, bounce 3s ease-in-out infinite alternate;
+            position: relative;
+            <!-- animation: moveRight 3s linear infinite, bounce 2s ease-in-out infinite alternate; -->
+                 animation: slide 3s linear forwards, bounce 1s ease-in-out infinite alternate;
         }
          .sliding-text {
             position: absolute;
@@ -72,7 +73,12 @@
                 left: 100%;
             }
         }
-        @keyframes bounce {
+          @keyframes bounce {
+          0%{transform:  translate(0,-200%);}
+          100%{transform:  translate(0, 0);}
+                }      
+       
+          <!-- @keyframes bounce {
             from {
                 top: 50%;
                 transform: translateY(-50%);
@@ -80,7 +86,7 @@
             to {
                 top: 30%;
                 transform: translateY(-30%);
-            }
+            } -->
         }
           
        
