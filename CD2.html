@@ -53,8 +53,8 @@
             height: 50px;
             background-color: #000099;
             border-radius: 50%;
-            position: relative;
-            animation: moveRight 5s linear infinite, bounce 1s ease-in-out infinite alternate;
+            position: absolute;
+            animation: moveRight 5s linear infinite, bounce 3s ease-in-out infinite alternate;
         }
          .sliding-text {
             position: absolute;
@@ -74,12 +74,12 @@
         }
         @keyframes bounce {
             from {
-                top: 55%;
-                transform: translateY(-60%);
+                top: 50%;
+                transform: translateY(-50%);
             }
             to {
-                top: 25%;
-                transform: translateY(-40%);
+                top: 30%;
+                transform: translateY(-30%);
             }
         }
           
