@@ -48,22 +48,23 @@
 /*END Siding bar SECTION*/
 
 /*circle bounce SECTION*/  
-             .circle {
-            width: 50px;
-            height: 50px;
-            background-color: #000099;
-            border-radius: 50%;
-            position: relative;
-            animation: moveRight 3s linear infinite, bounce .8s ease-in-out infinite alternate;
-                
-        }
+        
          .sliding-text {
             position: absolute;
             white-space: nowrap;
             color: #ffd662;
             font-size: 24px;
             font-weight: bold;
-            animation: slide 12s linear infinite;
+            animation: slide 10s linear infinite;
+        }
+  
+       .circle {
+            width: 50px;
+            height: 50px;
+            background-color: blue;
+            border-radius: 50%;
+            position: absolute;
+            animation: moveRight 8s linear infinite, bounce 1s ease-in-out infinite alternate;
         }
         @keyframes moveRight {
             from {
@@ -73,7 +74,7 @@
                 left: 100%;
             }
         }
-          @keyframes bounce {
+        @keyframes bounce {
             from {
                 top: 50%;
                 transform: translateY(-50%);
@@ -81,9 +82,8 @@
             to {
                 top: 30%;
                 transform: translateY(-30%);
-            } 
+            }
         }
-          
        
 /*circle bounce SECTION*/ 
   
@@ -490,10 +490,10 @@ tr:nth-child(even) {
   <BR>
   <hr>
   <div class="b">
-  <h5 style="font-family: Times New Roman; color: #fff;"><em>Giving back to the community is Essential</em><br><br>Giving time to help others through "AT&T Believes" has been rewarding, and is very important to me!</h5>
+  <h4 style="font-family: Times New Roman; color: Black;"><em>Giving back to the community is Essential</em><br><br>Giving time to help others through "AT&T Believes" has been rewarding, and is very important to me!</h4>
   </div>
   <div class="c"> 
-   <h5 style="font-family: Times New Roman; color: #fff;"><em>Giving my best effort is a Priority</em><br><br>Giving my best while working with others, is beneficial to the team and the tasks at hand!</h5>
+   <h4 style="font-family: Times New Roman; color: Black;"><em>Giving my best effort is a Priority</em><br><br>Giving my best while working with others, is beneficial to the team and the tasks at hand!</h4>
 <!--  <h6 style="font-family: Times New Roman;style=padding: 3px 8px; background-color: #2f4f4f; color: #fff; height: auto; border: 1px solid black;"><em>Giving my best effort is a Priority</em><br><br>Giving my best while working with others, is beneficial to the team and the tasks at hand!</h6>-->
   </div> 
   <hr> 
