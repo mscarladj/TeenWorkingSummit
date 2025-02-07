@@ -57,6 +57,14 @@
             left: 0;
             animation: bounce 3s infinite ease-in-out;
         }
+          .sliding-text {
+            position: absolute;
+            white-space: nowrap;
+            color: light blue;
+            font-size: 24px;
+            font-weight: bold;
+            animation: slide 5s linear infinite;
+        }
         @keyframes bounce {
             0% {
                 left: 0;
@@ -403,12 +411,7 @@ tr:nth-child(even) {
     </div> 
 </div>
 
-  <div class="slider-container">
-        <div class="sliding-bar"></div>
-    </div>
-
-
-   <div class="dropdown">
+    <div class="dropdown">
     <a href="#popup" style="padding: 10px 20px; background-color: #990000; 
                             color: #fff; text-decoration: none; border-radius: 5px;">CLICK HERE - Languages and Applications!</a>
       <div id="popup" class="popup">
@@ -426,7 +429,12 @@ tr:nth-child(even) {
       </div>
    </div>
 </div>   <!--  ----------END of----NavBar--------------------   -->
-
+ 
+  <div class="slider-container">
+        <div class="sliding-bar">
+          <div class="sliding-text">Welcome to My Website!</div>
+        </div>
+    </div>
   
 <body style="
     height: 3000px;
@@ -521,7 +529,9 @@ span.onclick = function() {
  <h5 style="text-align: center;",style="color:#000099;"><a class="ex2"><em>Thank you for taking time to spend with me, on my journey to find my next great opportunity!</em></a></h5>
 
   <div class="slider-container">
-        <div class="sliding-bar"></div>
+        <div class="sliding-bar">
+          <div class="sliding-text">Thank You!</div>
+        </div>
     </div>
   
   
