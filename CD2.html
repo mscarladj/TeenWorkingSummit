@@ -63,8 +63,8 @@
             height: 50px;
             background-color: blue;
             border-radius: 50%;
-            position: relative;
-            animation: bounce .5s ease-in-out infinite alternate, moveRight 8s linear infinite;
+            position: absolute;
+            animation: bounce 5s ease-in-out infinite alternate, moveRight 8s linear infinite;
            }
 
       .circle {
@@ -85,12 +85,12 @@
         }
         @keyframes bounce {
             from {
-                top: 50%;
-                transform: translateY(-50%);
+                top: 80%;
+                transform: translateY(-20%);
             }
             to {
-                top: 30%;
-                transform: translateY(-30%);
+                top: 60%;
+                transform: translateY(-40%);
             }
         }
        
