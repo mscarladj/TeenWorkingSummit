@@ -1,26 +1,116 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta charset="UTF-8"> 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">  
 <style>
-  @media (min-width:320px)  { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ }
-  @media (min-width:480px)  { /* smartphones, Android phones, landscape iPhone */ }
-  @media (min-width:600px)  { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ }
-  @media (min-width:801px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ } 
-  <!-- @media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ } -->
-  <!-- @media (min-width:1281px) { /* hi-res laptops and desktops */ } -->
-  <!-- @media only screen and (max-width: 700px) -->
-  
-body {
+@media (min-width:320px)  { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ }
+@media (min-width:480px)  { /* smartphones, Android phones, landscape iPhone */ }
+@media (min-width:600px)  { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ }
+
+  body {
   font-family: Arial, Helvetica, sans-serif;
-}
+  margin:0;
+  overflow:hidden;
+  <!-- display: flex; -->
+  <!-- justify-content: center; -->
+  <!-- align-items: center; -->
+  <!-- height: 100vh; -->
+  <!-- background-color: #f0f0f0; -->
+    } 
+
+  /* Siding bar SECTION */
+  
+  .sliding-text {
+            position: absolute;
+            white-space: nowrap;
+            color: #ffd662;
+            font-size: 24px;
+            font-weight: bold;
+            animation: slide 10s linear infinite;
+                }
+  
+ .slider-container {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  background-color: #00539c;
+  overflow: hidden;
+   }
+ .sliding-bar {
+  position: absolute;
+  width: 200px;
+  height: 100%;
+  background-color: silver;
+  animation: slide 20s linear infinite;
+      }
+  @keyframes slide {
+      from {
+      left: -200px;
+         }
+     to {
+       left: 100%;
+     }
+   }
+
+/*END Siding bar SECTION*/
+
+/*circle bounce SECTION*/  
+        
+         .sliding-text {
+            position: absolute;
+            white-space: nowrap;
+            color: #ffd662;
+            font-size: 24px;
+            font-weight: bold;
+            animation: slide 10s linear infinite;
+        }
+
+ <!--   .circle2 {
+            width: 50px;
+            height: 50px;
+            background-color: blue;
+            border-radius: 50%;
+            position: absolute;
+            animation: bounce 5s ease-in-out infinite alternate, moveRight 8s linear infinite;
+           }  -->
+
+      .circle {
+            width: 50px;
+            height: 50px;
+            background-color: blue;
+            border-radius: 50%;
+            position: absolute;
+            animation: moveRight 8s linear infinite, bounce 1s ease-in-out infinite alternate;
+               }
+        @keyframes moveRight {
+            from {
+                left: 0;
+            }
+            to {
+                left: 100%;
+            }
+        }
+        @keyframes bounce {
+            from {
+                top: 70%;
+                transform: translateY(-20%);
+            }
+            to {
+                top: 60%;
+                transform: translateY(-40%);
+            }
+        }
+       
+/*circle bounce SECTION*/ 
   
 /*Navbar SECTION*/
   
 .navbar {
   overflow: hidden;
-  background-color: blue;
+  background-color: #333;
 }
 
 .navbar a {
@@ -32,30 +122,24 @@ body {
   text-decoration: none;
 }
 
-  .dropdown-other {
-   float: right;
-   overflow: hidden;
-   margin-top: 0;
-}
-  
 .dropdown {
-  float: center;
+  float: left;
   overflow: hidden;
 }
 
-.dropdown .dropbtn {   <!-- this is the rectangular button on the bar -->
+.dropdown .dropbtn {
   font-size: 16px;  
   border: none;
   outline: none;
   color: white;
   padding: 14px 16px;
-  background-color: blue;
+  background-color: inherit;
   font-family: inherit;
   margin-top: 30px;
 }
 
 .navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: blue;
+  background-color: red;
 }
 
 .dropdown-content {
@@ -77,7 +161,7 @@ body {
 }
 
 .dropdown-content a:hover {
-  background-color: #d6e0f5;
+  background-color: #ddd;
 }
 
 .dropdown:hover .dropdown-content {
@@ -85,12 +169,6 @@ body {
 }
 /* END Navbar SECTION */
 
-/* Additional styles for content */
-    h1 {
-      color: #ffbb80;
-      text-align: center;
-    }  
-  
 <!-- THIS SECTION manages the alignment through class -->  
 div.a {
   text-align: center;
@@ -107,7 +185,29 @@ div.c {
 div.d {
   text-align: justify;
 } 
-  <!-- THIS SECTION for the Background -->
+
+/*This SECTION MANAGES hover-animate-colors*/  
+a.ex1:hover, a.ex1:active {color: dark blue;}
+a.ex2:hover, a.ex2:active {font-size: 120%;}
+a.ex3:hover, a.ex3:active {background: light grey;}
+a.ex6:hover, a.ex6:active {background: white;}  
+/*This SECTION MANAGES hover-animate-colors*/ 
+
+/* Thank you section */
+span{
+  float: left;
+  width:0.7em;
+  font-size:400%;
+  font-family:algerian,courier;
+  line-height:80%;
+}
+  
+  /* Additional styles for content */
+    h1 {
+      color: #ffffff;
+      text-align: center;
+    }  
+
 
   /* START Pop Button SECTION-style */
   .popup {
@@ -130,70 +230,7 @@ div.d {
         }
     /*  END POPUP SECTION-style */
 
-/*This SECTION MANAGES hover-animate-colors*/  
-a.ex1:hover, a.ex1:active {color: dark red;}
-a.ex2:hover, a.ex2:active {font-size: 150%;}
-a.ex3:hover, a.ex3:active {background: light grey;}
-a.ex6:hover, a.ex6:active {background: white;}  
-/*This SECTION MANAGES hover-animate-colors*/ 
-  
-/* Thank you section */
-span{
-  float: left;
-  width:0.7em;
-  font-size:300%;
-  color: blue;
-  font-family:algerian,courier;
-  line-height:80%;
-}
-
-/* 2nd POPUP Section - popuptw */
-  /* Popuptw container -change style */
-.popuptw  {
-  position: relative;
-  display: inline-block;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-/* The actual popuptw */
-.popuptw .popuptext {
-  visibility: hidden;
-  width: 80px;
-  background-color: inherit;
-  color: #fff;
-  text-align: center;
-  border-radius: 8px;
-  padding: 10px 0;
-  position: absolute;
-  z-index: 1;
-  bottom: 125%;
-  left: 50%;
-  margin-left: -80px;
-}
-
- /* Popuptw arrow */
- .popuptw .popuptext::after {
-  content: "";
-  position: relative;
-  top: 50%;
-  left: 25%;
-  margin-left: -5px;
-  border-width: -5px;
-  border-style: solid;
-  border-color: #555 transparent transparent transparent;
-} 
-
-/* Toggle this class - hide and show the popuptw */
-.popuptw .show {
-  visibility: visible;
-  
-/* END 2nd POPUP Section - popuptw */  
-  
-/* Skills SECTION - style */
+<!-- /* SKills SECTION - style */ -->
   #myImg {
   border-radius: 5px;
   cursor: pointer;
@@ -280,111 +317,60 @@ span{
   }
 }
 
-/* END SKills SECTION */
+<!-- /* END Skills SECTION */ -->
 
+  
+
+/* Format the bullets */
   ul {
         list-style-type: disc; /* This sets the bullet style to a disc (default) */
         padding-left: 20px; /* Adds some padding to the left for better readability */
      }
-
+/* Make a table */
+  
 table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
-  width: 100%;
+  width: none;
 }
 
 td, th {
   border: 1px solid #0000cc;
-  text-align: left;
+  text-align: center;
   padding: 8px;
 }
 
 tr:nth-child(even) {
   background-color: #e6e6ff;
 }  
- 
+
 </style>  <!-- -------------------------------------------END Style and Header------------------START BODY---------------------------------------------------------------------------------------------------- -->
 </head>
 
-   div {
-    background: linear-gradient(to top, #333333 0%, #99ccff 97%);
-    }
+<!--  /* background page color */  -->
+<body style="background: linear-gradient(to top left, #000000 0%, #ffffff 100%);>
 
 <body>
-  <div class="a"> 
-  <h1 style="color:#e6e6e6;",style="font-size:5vw;"><a class="ex2"><em>Carla Davis<br>Lead Sys Analyst, Security Liason, Business Data Steward<br></em></a></h1>
- </div>
+
+ <div class="a"> 
+    <h1 style="font-family: Baskerville; style="color: black;",style="font-size:5vw;"><a class="ex2"><em>Carla Davis<br>Lead Sys Analyst, Security Liason, Business Data Steward</em></a></h1>
+  </div>
+
+   <div class="slider-container">
+        <div class="sliding-bar">
+          <div class="sliding-text">Carla Davis&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Welcome to My Website!</div>
+        </div>
+    </div> 
   
    <div class="b">
-    <p style="color:#e6e6e6;",style="font-size:5vw;"><a class="ex2"><em>Loves Technology and New Challenges!</em></a></p>
+    <p style="color: black;",style="font-size:5vw;"><a class="ex2"><em>Loves Technology and New Challenges!</em></a></p>
   </div>
 
    <div class="c">
-    <p style="color:#e6e6e6;",style="font-size:5vw;"><a class="ex2"><em>Collaborative team member!</em></a></p>
-  </div>    
-      
-<div class="navbar">
+    <p style="color:#ffffff;",style="font-size:5vw;"><a class="ex2"><em>Collaborative team member!</em></a></p>
+      <div class ="c">
   <div class="dropdown">
-    <button class="dropbtn">Job Titles/Roles Over the Years
-      <i class="fa fa-caret-down"></i>
-    </button>
- <div class="dropdown-content">
-      <ul style="color: black;"> 
-           <li style="text-align: left;","list-style-type: disc;">Lead Systems Analyst - within Finance Capitol</li> 
-           <li style="text-align: left;","list-style-type: disc;">Lead Billing Ops & Supervisor - within Billings OPS Finance</li>
-           <li style="text-align: left;",list-style-type: disc;>Information Technology Supervisor - Mediation Operations for Telegence and CARE Billing Systems</li>
-           <li style="text-align: left;",list-style-type: disc;>Information Technology Associate Manager - within Telegence & U-verse Billing Systems</li>
-           <li style="text-align: left;",list-style-type: disc;>Information Technology Analyst & Senior IT Analyst - within IT CIBER, Guiding and Rating, ETQC AR/Billing/MAF/MPS, IST and E2E Testing</li>
-           <li style="text-align: left;",list-style-type: disc;>Contract Programmer - Analyst - within Consumer Billing Systems for AT&T</li>
-       </ul>
-          <h4 style="color: Blue;">
-          <p style="text-align:center;">8 different Job Titles and Roles in 24 years at AT&T!</p></h4> 
-    </div>
-  </div> 
-
-  <div class="dropdown">
-    <button class="dropbtn">Training - Continuous Learner!
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-     <table>
-      <tr>
-        <th>Titles</th>
-      </tr>
-          <tr><td><small>Completed over 10+ hours of training in Cybersecurity.</small></td></tr>
-          <tr><td><small>Completed over 10+ hours of training in Cybersecurity.</small></td></tr>
-          <tr><td><small>Completed over 6+ hours of training in Power Bi and Power Automate.</small></td></tr>
-          <tr><td><small>Completed over 17+ hours of training in Artificial Intelligence and Generative AI disciplines.</small></td></tr>
-          <tr><td><small>Completed over 6+ hours of training in JSON and Node.js</small></td></tr>
-          <tr><td><small>Completed over 15+ hours of training in Azure Fundamentals and Administration.</small></td></tr>
-          <tr><td><small>Microsoft Certified: Azure Fundamentals & Microsoft Azure Administrator</small></td></tr>
-          <tr><td><small>Data Engineer/ Data Analytics & Big Data Development Program - AT&T University</small></td></tr>
-          <tr><td><small>Data Science: Data Science Advanced - AT&T University</small></td></tr>
-          <tr><td><small>Strategic Business Transformation/Business Solutions – Business Solutions Training</small></td></tr>
-          <<tr><td><small>Software Defined Network (SDN) - Advanced Level -- AT&T University</small></td></tr>
-          <tr><td><small>Agile PG/PM From - AT&T University</small></td></tr>
-          <tr><td><small>API - API Bronze & Big Data/ Bronze - IT Sourcing Training</small></td></tr>
-          <tr><td><small>QMS Six Sigma Green Belt</small></td></tr>
-   </table>
-     </div>
-  </div> 
-  
-  <div class="dropdown">
-    <button class="dropbtn">Favorite Work Memories! 
-      <i class="fa fa-caret-down"></i>
-    </button>
-<div class="dropdown-content">
-       <h4>Most Favorite!</h4>
-       <h5 style="color: black;">Being selected to work in the official war room for the first<br>{ACME}I-Phone launch! Working with live PVT accounts,<br> testing and production for activations<br>and billing was exciting!</h5>
-   <hr>
-      <h4>Second Most Favorite!</h4>
-        <h5 style="color: black;">Starting from scratch to develop and support the IST (E2E) Test Calendar<br>for a Kintana Ban Expansion Project, for over<br>200 front end and middleware applications.<br>
-         It was quite robust, filled<br>with all activity for activations, usage processing and billing.</h5>
-    </div> 
-</div>
-
-   <div class="dropdown">
-    <a href="#popup" style="padding: 10px 20px; background-color: #990000; 
+    <a href="#popup" style="padding: 8px 40px; background-color: #990000; 
                             color: #fff; text-decoration: none; border-radius: 5px;">CLICK HERE - Languages and Applications!</a>
       <div id="popup" class="popup">
        <div class="popup-content">
@@ -398,18 +384,76 @@ tr:nth-child(even) {
                        background-color: #dc3545; color: #fff; 
                        text-decoration: none; border-radius: 3px;">Close</a>
        </div>
+       </div>
       </div>
    </div>
-</div>   <!--  ----------END of----NavBar--------------------   -->
+  </div>    
 
-<!-- NOt sure why this bar is here -->
+
+  
+<div class="navbar">
+  <div class="dropdown">
+    <button class="dropbtn">Job Titles/Roles Over the Years
+      <i class="fa fa-caret-down"></i>
+    </button>
+ <div class="dropdown-content">
+      <ul style="color: black;"> 
+           <li style="text-align: left;"><small>Lead Systems Analyst - within Finance Capitol</small></li> 
+           <li style="text-align: left;"><small>Lead Billing Ops & Supervisor - within Billings OPS Finance</small></li>
+           <li style="text-align: left;"><small>Information Technology Supervisor - Mediation Operations for Telegence and CARE Billing Systems</small></li>
+           <li style="text-align: left;"><small>Information Technology Associate Manager - within Telegence & U-verse Billing Systems</small></li>
+           <li style="text-align: left;"><small>Information Technology Analyst & Senior IT Analyst - within IT CIBER, Guiding and Rating, ETQC AR/Billing/MAF/MPS, IST and E2E Testing</small></li>
+           <li style="text-align: left;"><small>Contract Programmer - Analyst - within Consumer Billing Systems for AT&T</small></li>
+       </ul>
+          <h4 style="color: Blue;">
+          <p style="text-align:center;">8 different Job Titles and Roles in 24 years at AT&T!</p></h4> 
+    </div>
+  </div> 
+
+  <div class="dropdown">
+    <button class="dropbtn">Training - Continuous Learner!
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+     <h5 style="color: Blue;">Top 10 Training Endeavors!</h5>
+          <h6>~Completed over 10+ hours of training in Cybersecurity.</h6>
+          <h6>~Completed over 6+ hours of training in Power Bi and Power Automate.</h6>
+          <h6>~Completed over 17+ hours of training in Artificial Intelligence and Generative AI disciplines.</h6>
+          <h6>~Completed over 6+ hours of training in JSON and Node.js</h6>
+          <h6>~Completed over 15+ hours of training in Azure Fundamentals and Administration.</h6>
+          <h6>~Microsoft Certified: Azure Fundamentals & Microsoft Azure Administrator</h6>
+          <h6>~Data Engineer, Data Analytics & Big Data Development Program - AT&T University</h6>
+          <h6>~Data Science & Data Science Advanced - AT&T University</h6>
+          <h6>~Software Defined Network (SDN) - Advanced Level -- AT&T University</h6>
+          <h6>~Agile PG/PM - AT&T University</h6>
+     </div>
+  </div> 
+  
+  <div class="dropdown">
+    <button class="dropbtn">Favorite Work Memories! 
+      <i class="fa fa-caret-down"></i>
+    </button>
+<div class="dropdown-content">
+       <h4 style="padding: 6px 8px; color: blue;">Most Favorite!</h4>
+       <h6 style="color: black; border-radius: 5px; padding: 6px 8px;">Being selected to work in the official war room for the first<br>{ACME}I-Phone launch! Working with live PVT accounts,<br> testing and production for activations<br>and billing was exciting!</h6>
+   <hr>
+      <h4 style="padding: 6px 8px; color: blue;">Second Most Favorite!</h4>
+        <h6 style="color: black; padding: 6px 8px;">Starting from scratch to develop and support the IST (E2E) Test Calendar<br>for a Kintana Ban Expansion Project, for over<br>200 front end and middleware applications.<br>
+         It was quite robust, filled<br>with all activity for activations, usage processing and billing.</h6>
+    </div> 
+</div>
+
+ 
+</div>   <!--  ----------END of----NavBar--------------------   -->
+ 
 <body style="
     height: 3000px;
     padding-top: 60px;
     padding-left: 80px;
   ">
-    <div style="      
-      background-color: gold;
+    <div style="
+      background-color: blue;
+      color: red;
       position: centered;
       top: 0;
       left: 10px;
@@ -418,27 +462,51 @@ tr:nth-child(even) {
       z-index: 100;
     ">
       </div>
+      
 </body>    
-    
-<h1 style="text-align:center;">Knowledge Seeker and Lifelong Learner!</h1>
- 
-<div class="a">
-<h1><BR> </BR>Technical and Detail-Oriented!</h1>
+
+ <div class="w3-container w3-center w3-animate-zoom"> 
+<h1 style="text-align:center;"><a class="ex1">Knowledge Seeker and Lifelong Learner!</a></h1><br><br>
+  <!-- <img src="img_car.jpg" alt="Car" style="width:100%"> -->
 </div>
 
-<h2 style="text-align:left;">Problem-Solving Skills!</h2> <h2 style="text-align:center;">Management Skills!</h2> <h2 style="text-align:right;">Analytical Skills!</h2>
-  
 <div class="a">
-<h1>Highly motivated and Goal-oriented!</h1>
+<h1></BR>Technical and Detail-Oriented!</h1>
 </div>
 
-<div class="b">
-<h3><em>Giving back to the community is Essential&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Giving my best effort is a Priority  
-<hr><br>Giving time to help others<br>through "AT&T Believes"<br>has been rewarding,<br>and is very important to me!&emsp;&emsp;&emsp;&emsp;&emspGiving my best effort is a Priority<hr><br>Giving your best while working with others, adds a great benefit to the team and the tasks at hand!</em></h3>
+     <div class="circle"></div>                                                                                      
+
+
+ <h2 style="text-align:left;">Problem-Solving Skills!</h2> <h2 style="text-align:center;">Management Skills!</h2> <h2 style="text-align:right;">Analytical Skills!</h2>
+
+<div class="slider-container">
+        <div class="sliding-bar"></div>
+    </div>   
+
+  <div class="a">
+    <div class="w3-container">
+  <h1><a class="ex1">Highly motivated and Goal-oriented!</a></h1>
+  </div>
 </div>
+
+<div class="slider-container">
+        <div class="sliding-bar"></div>
+    </div>
   
+  <BR>
+  <hr>
+  <div class="b">
+  <h5 style="font-family: Times New Roman; color: white;"><a class="ex2"><em>Giving back to the community is Essential</em><br><br>Giving time to help others<br>through "AT&T Believes" has been rewarding,<br>and is very important to me!</a></h5>
+    <!-- <div class="circle2"></div> -->
+  </div>
+  <div class="c"> 
+   <h5 style="font-family: Times New Roman; color: white;"><a class="ex2"><em>Giving my best effort is a Priority</em><br><br>Giving my best while working with others,<br>is beneficial to the team<br>and the tasks at hand!</a></h5>
+  </div> 
+  <hr> 
+    <!--  <h6 style="font-family: Times New Roman;style=padding: 3px 8px; background-color: #2f4f4f; color: #fff; height: auto; border: 1px solid black;"><em>Giving my best effort is a Priority</em><br><br>Giving my best while working with others,<br>is beneficial to the team<br>and the tasks at hand!</h6>-->
   
-<!-- /* QR CODES SECTION -body */ -->
+   
+<!-- /* Skills SECTION -body */ -->
 
 <!-- The Modal -->
 <div id="myModal" class="modal">
@@ -469,39 +537,20 @@ span.onclick = function() {
   modal.style.display = "none";
 }
 </script>
-<!--   /* END QR CODES SECTION -body*/ -->
 
- 
-    <p style="text-align: left;"><span>Thank You</span></p>
-    <h4 style="text-align: center;",style="color:#000099;"><a class="ex2"><em>For taking time to spend with me, on my journey to find my next great opportunity!</em></a></h4>
- 
+<!-- /* END Skills SECTION -body*/ -->
 
-    <body style="text-align:right",style="color:#000099;">
-        <div class="popuptw" onclick="myFunction()">Click here for contact information!
-           <h4 class="popuptext" id="myPopup"><small>cd1916@att.com or mscarladj@gmail.com</small></h4>
-           <h5 class="popuptext" id="myPopup"><small>Cell: 214-502-4279</small></h5>
-         </div>
-      <script>
-      // clicks on div the opens the popup
-        function myFunction() {
-        var popuptw = document.getElementById("myPopup");
-        popuptw.classList.toggle("show");
-        }
-      </script>
-    </body>
+                                              
+ <BR>
+ <h3 style="text-align: center; color: silver;"><a class="ex2"><strong><em>Thank you for taking time to spend with me, on my journey to find, my next great opportunity!</em></strong></a></h3>
 
-    <!-- Quote #1 Section  -->
-  <div class="c"> 
-   <div style="
-      background-color: blue;
-      color: #333333;
-      bottom: 600px;
-      right: 0px;
-   "> 
-    <p style="font-family:'Baskerville', Sans Serif;"><small>Before Anything Else, Preparation is the Key to Success!<br>~Alexander Graham Bell</small></p>
-</div>
-  </div>  
+  <div class="slider-container">
+        <div class="sliding-bar">
+          <div class="sliding-text">Thank You!</div>
+        </div>
+    </div>
   
-  </body>
-</html>
 
+<p><sub>Resume designed exclusively for internal resume submission; by CarlaDavisJDesigns. c/o 2025</sub></p>  
+</body>
+</html>
