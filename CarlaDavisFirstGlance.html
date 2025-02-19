@@ -1,53 +1,129 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Welcome to CDavisResume</title>
+<meta charset="UTF-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">  
 <style>
 @media (min-width:320px)  { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ }
-@media (min-width:480px)  { /* smartphones, Android phones, landscape iPhone */ }
+@media screen and (min-width:481px)  { /* smartphones, Android phones, landscape iPhone */ }
 @media (min-width:600px)  { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ }
-<!-- @media (min-width:801px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ } -->
-<!-- @media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ } -->
-<!-- @media (min-width:1281px) { /* hi-res laptops and desktops */ } -->
-<!-- @media only screen and (max-width: 700px) -->
-
-body {font-family: Baskerville}
-
-/* The IMAGE USED */  
-<!--.bg-img {    
-  background-image: url(https://raw.githubusercontent.com/mscarladj/WorkingRepo/4b4b88433e3717f22ca3b339eb7fd4a02b03c9aa/successimage.svg);
-  height: 575px; 
-  width: 1200px;
-  /*background-image: url("https://raw.githubusercontent.com/mscarladj/TeenWorkingSummit/fee1608c3d5885d9e7dae070c82d1718e64811a0/image_school_Network.svg");*/
-  /*background-image: url("https://images.pexels.com/photos/1762851/pexels-photo-1762851.jpeg?auto=compress&cs=tinysrgb&w=400");*/
+@media (min-width:801px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ } 
+@media (min-width:1281px) { /* hi-res laptops and desktops */ } 
+@media only screen and (max-width: 700px)
   
-  /* Center and scale the image */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; -->
-}
-  
-/*Navbar SECTION*/  
+  body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin:0;
+  overflow:hidden;
+  <!-- display: flex; -->
+  <!-- justify-content: center; -->
+  <!-- align-items: center; -->
+  <!-- height: 100vh; -->
+  <!-- background-color: #f0f0f0; -->
+    } 
 
+  /* Siding bar SECTION */
+  
+  .sliding-text {
+            position: absolute;
+            white-space: nowrap;
+            color: #ffd662;
+            font-size: 24px;
+            font-weight: bold;
+            animation: slide 10s linear infinite;
+                }
+  
+ .slider-container {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  background-color: #00539c;
+  overflow: hidden;
+   }
+ .sliding-bar {
+  position: absolute;
+  width: 200px;
+  height: 100%;
+  background-color: silver;
+  animation: slide 20s linear infinite;
+      }
+  @keyframes slide {
+      from {
+      left: -200px;
+         }
+     to {
+       left: 100%;
+     }
+   }
+
+/*END Siding bar SECTION*/
+
+/*circle bounce SECTION*/  
+        
+         .sliding-text {
+            position: absolute;
+            white-space: nowrap;
+            color: #ffd662;
+            font-size: 24px;
+            font-weight: bold;
+            animation: slide 10s linear infinite;
+        }
+
+ <!--   .circle2 {
+            width: 50px;
+            height: 50px;
+            background-color: blue;
+            border-radius: 50%;
+            position: absolute;
+            animation: bounce 5s ease-in-out infinite alternate, moveRight 8s linear infinite;
+           }  -->
+
+      .circle {
+            width: 50px;
+            height: 50px;
+            background-color: blue;
+            border-radius: 50%;
+            position: absolute;
+            animation: moveRight 8s linear infinite, bounce 1s ease-in-out infinite alternate;
+               }
+        @keyframes moveRight {
+            from {
+                left: 0;
+            }
+            to {
+                left: 100%;
+            }
+        }
+        @keyframes bounce {
+            from {
+                top: 100%;
+                transform: translateY(-30%);
+            }
+            to {
+                top: 60%;
+                transform: translateY(-40%);
+            }
+        }
+       
+/*circle bounce SECTION*/ 
+  
+/*Navbar SECTION*/
+  
 .navbar {
   overflow: hidden;
-  background-color: #990000;
+  background-color: #333;
 }
 
 .navbar a {
-  float: left; 
+  float: left;
   font-size: 16px;
   color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-}
-
-.dropdown-other {
-   float: right;
-   overflow: hidden;
-   margin-top: 0;
 }
 
 .dropdown {
@@ -57,23 +133,23 @@ body {font-family: Baskerville}
 
 .dropdown .dropbtn {
   font-size: 16px;  
-  border-style: double;
+  border: none;
   outline: none;
-  color: black;
+  color: white;
   padding: 14px 16px;
-  background-color: #990000;
+  background-color: inherit;
   font-family: inherit;
-  margin-top: 0;
+  margin-top: 30px;
 }
 
 .navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: light black;
+  background-color: red;
 }
 
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f5f5ef;
+  background-color: #f9f9f9;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
@@ -97,7 +173,39 @@ body {font-family: Baskerville}
 }
 /* END Navbar SECTION */
 
-/* START Pop Button SECTION-style */
+<!-- THIS SECTION manages the alignment through class -->  
+div.a {
+  text-align: center;
+}
+
+div.b {
+  text-align: left;
+}
+
+div.c {
+  text-align: right;
+} 
+
+div.d {
+  text-align: justify;
+} 
+
+/*This SECTION MANAGES hover-animate-colors*/  
+a.ex1:hover, a.ex1:active {color: dark blue;}
+a.ex2:hover, a.ex2:active {font-size: 85%;}
+a.ex3:hover, a.ex3:active {background: light grey;}
+a.ex6:hover, a.ex6:active {background: white;}  
+/*This SECTION MANAGES hover-animate-colors*/ 
+
+
+  /* Additional styles for content */
+    h1 {
+      color: #ffffff;
+      text-align: center;
+    }  
+
+
+  /* START Pop Button SECTION-style */
   .popup {
             display: none;
             position: fixed;
@@ -117,92 +225,8 @@ body {font-family: Baskerville}
             display: flex;
         }
     /*  END POPUP SECTION-style */
-  
-/* Additional styles for content */
-    h1 {
-      color: #ffbb80;
-      text-align: center;
-    }
-  
-<!-- THIS SECTION manages the alignment through class -->  
-div.a {
-  text-align: center;
-}
 
-div.b {
-  text-align: left;
-}
-
-div.c {
-  text-align: right;
-} 
-
-div.d {
-  text-align: justify;
-}   
-
-/*This SECTION MANAGES hover-animate-colors*/  
-a.ex1:hover, a.ex1:active {color: dark red;}
-a.ex2:hover, a.ex2:active {font-size: 150%;}
-a.ex3:hover, a.ex3:active {background: light grey;}
-a.ex6:hover, a.ex6:active {background: white;}  
-/*This SECTION MANAGES hover-animate-colors*/ 
-
-/* Thank you section */
-span{
-  float: left;
-  width:0.7em;
-  font-size:400%;
-  font-family:algerian,courier;
-  line-height:80%;
-}
-
-/* 2nd POPUP Section - popuptw */
-  /* Popuptw container -change style */
-.popuptw  {
-  position: relative;
-  display: inline-block;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-/* The actual popuptw */
-.popuptw .popuptext {
-  visibility: hidden;
-  width: 80px;
-  background-color: inherit;
-  color: #fff;
-  text-align: center;
-  border-radius: 8px;
-  padding: 10px 0;
-  position: absolute;
-  z-index: 1;
-  bottom: 125%;
-  left: 50%;
-  margin-left: -80px;
-}
-
- /* Popuptw arrow */
- .popuptw .popuptext::after {
-  content: "";
-  position: relative;
-  top: 50%;
-  left: 25%;
-  margin-left: -5px;
-  border-width: -5px;
-  border-style: solid;
-  border-color: #555 transparent transparent transparent;
-} 
-
-/* Toggle this class - hide and show the popuptw */
-.popuptw .show {
-  visibility: visible;
-  
-/* END 2nd POPUP Section - popuptw */
-/* QR CODES SECTION - style */
+<!-- /* SKills SECTION - style */ -->
   #myImg {
   border-radius: 5px;
   cursor: pointer;
@@ -289,147 +313,260 @@ span{
   }
 }
 
-/* END QR CODES SECTION */
- 
-  </style>
-</head>
-  
-<!--  /* background page color */  -->
-<body style="background: linear-gradient(to right, #990000 0%, #ffcc66 67%);
-<!-- <body style="background-color: color-mix(in oklab, #ff0000 50%, #ff9933); -->
-<!-- <body style="background-color:#F2C20D; #990000;"> -->
+<!-- /* END Skills SECTION */ -->
 
-<body>  
- <div class="a"> 
-  <h1 style="color:#e6e6e6;",style="font-size:5vw;"><a class="ex2"><em>Welcome<br>to<br>Carla Davis First Glance<br></em></a></h1>
- </div>
   
-   <div class="a">
-    <p style="color:#e6e6e6;",style="font-size:5vw;"><a class="ex2"><em>Sharing Insightful Information!</em></a></p>
+
+/* Format the bullets */
+  ul {
+        list-style-type: disc; /* This sets the bullet style to a disc (default) */
+        padding-left: 20px; /* Adds some padding to the left for better readability */
+     }
+/* Make a table */
+  
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: none;
+}
+
+td, th {
+  border: 1px solid #0000cc;
+  text-align: center;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #e6e6ff;
+}  
+  
+  .waviy {
+  position: center;
+}
+.waviy span {
+  position: center;
+  display: inline-block;
+  font-size: 50px;
+  color: #fff;
+  text-transform: uppercase;
+  animation: flip 3s infinite;
+  animation-delay: calc(.5s * var(--i))
+}
+@keyframes flip {
+  0%,80% {
+    transform: rotateY(360deg) 
+  }
+}
+
+
+</style>  <!-- --------------------------------------------------------------------------------END Style and Header------------------START BODY---------------------------------------------------------------------------------------------------- -->
+</head>
+
+<!--  /* background page color */  -->
+<body style="background: linear-gradient(to top left, #ffffff 0%, #000000 100%);>
+
+<body>
+
+<div class="a"> 
+    <h1 style="font-family: Edwardian Script ITC;"><a class="ex2"><em>Carla Davis<br>Lead Sys Analyst, Security Liason, Business Data Steward</em></a></h1>
   </div>
 
-   <!--  <div class="c">
-         <p style="color:#e6e6e6;",style="font-size:5vw;"><a class="ex2"><em>Check out these Social Media sites!</em></a></p>
-         </div> -->
+   <div class="slider-container">
+        <div class="sliding-bar">
+          <div class="sliding-text">Carla Davis&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Welcome to My Website!</div>
+        </div>
+    </div> 
+  
+   <div class="b">
+    <p style="color: white;",style="font-size:5vw;"><a class="ex2"><em>Loves Technology and New Challenges!</em></a></p>
+  </div>
+
+   <div class="c">
+    <p style="color:black;",style="font-size:5vw;"><a class="ex2"><em>Collaborative team member!</em></a></p>
+  </div>    
+  
+  
+    <div class ="a">
+    <div class="dropdown">
+    <a href="#popup" style="padding: 8px 20px; background-color: red; 
+                            color: #fff; text-decoration: none; border-radius: 5px;">CLICK HERE - Languages and Applications!</a>
+      <div id="popup" class="popup">
+       <div class="popup-content">
        
-<div class="bg-img">
- <div class="navbar">  <!-- /* START NAV-BAR */ -->
+       <img id="myImg" src="https://raw.githubusercontent.com/mscarladj/WorkingRepo/d308b128b8b2cfd155754bdc528a746922ba9c4c/skills_resume.svg" alt="Skills!" style="width:100%;max-width:300px">
+        <p style="text-align:center;">Click the Image</p>
+         <h4 style="color: blue;">
+          <p style="text-align:center;">Here is a list of<br>Coding Disciplines, Applications and Tools<br>that I have enjoyed learning and utilizing<br>during my 24 years with AT&T!</p></h4> 
+           <a href="#" style="display: inline-block; 
+                       margin-top: 10px; padding: 5px 10px; 
+                       background-color: #dc3545; color: #fff; 
+                       text-decoration: none; border-radius: 3px;">Close</a>
+       </div>
+       </div>
+      </div>
+   </div> 
+
+  
+<div class="navbar">
   <div class="dropdown">
-    <button class="dropbtn">Coding and Technical Disciplines
+    <button class="dropbtn">Job Titles/Roles Over the Years
       <i class="fa fa-caret-down"></i>
     </button>
-  <div class="dropdown-content">
-    Proficient in computer languages including LINUX, HTML/CSS, SQL/PL, SQLPLUS, C/C++, JSON, Node.js, JQUERY, RESTful APIs,<br>COBOL/II, SED, AWK, JavaScript, SAS, DB2, XGEN-4GL, JCL, IMS, PASCAL.
-     </div>
- </div>
- 
+ <div class="dropdown-content">
+      <ul style="color: black;"> 
+           <li style="text-align: left;"><small>Lead Systems Analyst - within Finance Capitol</small></li> 
+           <li style="text-align: left;"><small>Lead Billing Ops & Supervisor - within Billings OPS Finance</small></li>
+           <li style="text-align: left;"><small>Information Technology Supervisor - Mediation Operations for Telegence and CARE Billing Systems</small></li>
+           <li style="text-align: left;"><small>Information Technology Associate Manager - within Telegence & U-verse Billing Systems</small></li>
+           <li style="text-align: left;"><small>Information Technology Analyst & Senior IT Analyst - within IT CIBER, Guiding and Rating, ETQC AR/Billing/MAF/MPS, IST and E2E Testing</small></li>
+           <li style="text-align: left;"><small>Contract Programmer - Analyst - within Consumer Billing Systems for AT&T</small></li>
+       </ul>
+          <h4 style="color: Blue;">
+          <p style="text-align:center;">8 different Job Titles and Roles in 24 years at AT&T!</p></h4> 
+             <a href="#" style="display: inline-block; 
+                       margin-top: 10px; padding: 5px 10px; 
+                       background-color: #dc3545; color: #fff; 
+                       text-decoration: none; border-radius: 3px;">Click to Close</a>
+    </div>
+  </div> 
+
   <div class="dropdown">
-    <button class="dropbtn">Applications
+    <button class="dropbtn">Training - Continuous Learner!
       <i class="fa fa-caret-down"></i>
     </button>
     <div class="dropdown-content">
-           LINUX/Unix Operating System, Oracle19I, using TERADATA, SQL/SQL/PL, (OHSH), Telegence & UVERSE Billing,<br>ERBI/BusinessObjects/VERTICA, YODA GUI, OPUS, CSS, MS POWER BI, MS EXCEL, TOAD DataPoint (Oracle), Webtrax
+     <h5 style="color: Blue;">Top 10 Training Endeavors!</h5>
+          <h6 style="padding: 6px 8px;">~Completed over 10+ hours of training in Cybersecurity.</h6>
+          <h6 style="padding: 6px 8px;">~Completed over 6+ hours of training in Power Bi and Power Automate.</h6>
+          <h6 style="padding: 6px 8px;">~Completed over 17+ hours of training in Artificial Intelligence and Generative AI disciplines.</h6>
+          <h6 style="padding: 6px 8px;">~Completed over 6+ hours of training in JSON and Node.js</h6>
+          <h6 style="padding: 6px 8px;">~Completed over 15+ hours of training in Azure Fundamentals and Administration.</h6>
+          <h6 style="padding: 6px 8px;">~Microsoft Certified: Azure Fundamentals & Microsoft Azure Administrator</h6>
+          <h6 style="padding: 6px 8px;">~Data Engineer, Data Analytics & Big Data Development Program - AT&T University</h6>
+          <h6 style="padding: 6px 8px;">~Data Science & Data Science Advanced - AT&T University</h6>
+          <h6 style="padding: 6px 8px;">~Software Defined Network (SDN) - Advanced Level -- AT&T University</h6>
+          <h6 style="padding: 6px 8px;">~Agile PG/PM - AT&T University</h6>
+           <a href="#" style="display: inline-block; 
+                       margin-top: 10px; padding: 5px 10px; 
+                       background-color: #dc3545; color: #fff; 
+                       text-decoration: none; border-radius: 3px;">Close</a>
      </div>
   </div> 
+  
   <div class="dropdown">
-    <button class="dropbtn">High School Resources
+    <button class="dropbtn">Favorite Work Memories! 
       <i class="fa fa-caret-down"></i>
     </button>
-    <div class="dropdown-content">
-           <a href="https://www.act.org/content/act/en/products-and-services/the-act/test-preparation/free-act-test-prep.html">ACT Test Strategies -- Free</a>  
-           <a href="https://www.princetonreview.com/college/free-sat-practice-test">SAT Test Strategies -- Free</a>  
-           <a href="https://www.quadeducationgroup.com">College Prep for High School Kids</a>  
-           <a href="https://www.c2educate.com">Start preparing for College</a>   
-           <a href="https://www.myfuture.com">Timeline for College Planning Steps</a>    
-           <a href="https://summer.harvard.edu/blog/how-to-prepare-for-college-in-high-school/">How to Prepare for College in High School</a>  
-           <a href="https://www.hesc.ny.gov/prepare-for-college/your-high-school-path-to-college/five-things-to-do-in-high-school.html">5 Things to Do in High School to Prepare for College</a>  
-     </div>
-  </div>
-
-  <div class="dropdown">
-    <button class="dropbtn">Career Resources
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-           <a href="https://www.indeed.com/">Indeed Job Search</a>  
-           <a href="https://www.resume-now.com">Resume Builder  ---Free</a>  
-           <a href="https://www.resume.co">Use AI Tools to Build Resumes</a>  
-           <a href="https://www.mycomputercareer.edu">IT Certifications</a>   
-           <a href="https://www.todaysmilitary.com">Military Resources</a>    
-    </div>
-  </div>
+<div class="dropdown-content">
+       <h4 style="padding: 6px 8px; color: blue;">Most Favorite!</h4>
+       <h6 style="color: black; border-radius: 5px; padding: 6px 8px;">Being selected to work in the official war room for the first<br>{ACME}I-Phone launch! Working with live PVT accounts,<br> testing and production for activations<br>and billing was exciting!</h6>
+   <hr>
+      <h4 style="padding: 6px 8px; color: blue;">Second Most Favorite!</h4>
+        <h6 style="color: black; padding: 6px 8px;">Starting from scratch to develop and support the IST (E2E) Test Calendar<br>for a Kintana Ban Expansion Project, for over<br>200 front end and middleware applications.<br>
+         It was quite robust, filled<br>with all activity for activations, usage processing and billing.</h6>
+           <a href="#" style="display: inline-block; 
+                       margin-top: 10px; padding: 5px 10px; 
+                       background-color: #dc3545; color: #fff; 
+                       text-decoration: none; border-radius: 3px;">Close</a>
+    </div> 
 </div>
 
-  <div class="dropdown-other">
-    <a href="#popup" style="padding: 10px 20px; background-color: #990000; 
-                            color: #fff; text-decoration: none; border-radius: 5px;">Click for List of FaceBook Groups!</a>
-      <div id="popup" class="popup">
-       <div class="popup-content">
-        <h2>Facebook Groups</h2>
-         <ul style="color: black;"> 
-           <li style="text-align: center;">Scholarships for African American Students - HBCUs</li> 
-           <li style="text-align: center;">Black, Brown & HBCU Bound</li>
-           <li style="text-align: center;">College Ave</li>
-           <li style="text-align: center;">Common Black College Application</li>
-           <li style="text-align: center;">DFW HBCU Connection</li>
-           <li style="text-align: center;">Dr. Thompson and The Zero Debt College Project</li>
-           <li style="text-align: center;">HBCU Connect</li>
-           <li style="text-align: center;">HBCU Scholarship Network</li>
-           <li style="text-align: center;">Scholarship 101: Securing the Bag</li>
-           <li style="text-align: center;">The Scholarship Club</li>
-         </ul>
-          <h4 style="color: Purple;">
-          <p style="text-align:center;">Connect by logging into your Facebook account and<br>typing in the title in your search browser.
-                                        <br>You are Welcome to Join the Groups!</p></h4> 
-           <a href="#" style="display: inline-block; 
-                       margin-top: 10px; padding: 5px 10px; 
-                       background-color: #dc3545; color: #fff; 
-                       text-decoration: none; border-radius: 3px;">Close</a>
-       </div>
+ 
+</div>   <!--  ----------END of----NavBar--------------------   -->
+ 
+<body style="
+    height: 3000px;
+    padding-top: 60px;
+    padding-left: 80px;
+  ">
+    <div style="
+      background-color: blue;
+      color: red;
+      position: centered;
+      top: 0;
+      left: 10px;
+      right: 10px;
+      height: 50px;
+      z-index: 100;
+    ">
       </div>
+      
+</body>    
 
-   <!-- <div class="dropdown">
-    <a href="#popup" style="padding: 10px 20px; background-color: #990000; 
-                            color: #fff; text-decoration: none; border-radius: 5px;">Scan the QR codes for Scolarship Information!</a>
-      <div id="popup" class="popup">
-       <div class="popup-content">
-       
-       <img id="myImg" src="https://github.com/mscarladj/WorkingRepo/blob/main/qrcode_test.jpg?raw=true" alt="Scan QR Codes" style="width:100%;max-width:300px">
-        <p style="text-align:center;">Click the Image</p>
-         <h4 style="color: Red;">
-          <p style="text-align:center;">Here are a couple of<br>Scholarship Opportunities<br>provided by<br>Collin County Alumnae Chapter
-                                        <br>of Delta Sigma Theta Sorority, Inc.</p></h4> 
-           <a href="#" style="display: inline-block; 
-                       margin-top: 10px; padding: 5px 10px; 
-                       background-color: #dc3545; color: #fff; 
-                       text-decoration: none; border-radius: 3px;">Close</a>
-       </div>
-      </div>
-   </div> -->
-  
-  </div>
-    </div> <!-- div for bg-image -->
+ <div class="w3-container w3-center w3-animate-zoom"> 
+<h1 style="text-align:center;"><a class="ex1">Knowledge Seeker and Lifelong Learner!</a></h1><br><br>
+  <!-- <img src="img_car.jpg" alt="Car" style="width:100%"> -->
+</div>
 
- <div class="a">
-     <div style="
-        background-color:#990000;
-        border-style: inset;
-        float: none; 
-        height: -400px;
-        width:  -300px;
-        position: relative;">  
+<div class="a">
+<h1></BR>Technical and Detail-Oriented!</h1>
+</div>
+
+     <div class="circle"></div>                                                                                      
+
+
+ <h2 style="text-align:left;">Problem-Solving Skills!</h2> <h2 style="text-align:center;">Management Skills!</h2> <h2 style="text-align:right;">Analytical Skills!</h2>
+
+<div class="slider-container">
+        <div class="sliding-bar"></div>
     </div>   
- </div>
-  
-<!-- /* QR CODES SECTION -body */ -->
 
- <div class="a">
- <h4 style="color: Black;"> 
- <p style="text-align:center;">Additional Scholarship Opportunities!<br>
- <img id="myImg" src="https://github.com/mscarladj/WorkingRepo/blob/main/qrcode_test.jpg?raw=true" alt="Scan QR Codes" style="width:300%;max-width:500px"></p></h4>
+<div class="a">
+ <div class="waviy">
+   <span style="--i:1;">H</span>
+   <span style="--i:2">i</span>
+   <span style="--i:3">g</span>
+   <span style="--i:4">h</span>
+   <span style="--i:5">l</span>
+   <span style="--i:6">y</span>
  </div>
   
-<!-- The Modal 
+  <div class="waviy">
+  <span style="--i:7; padding: 40px 50px;"">M</span>
+   <span style="--i:8; padding: 40px 50px;"">o</span>
+   <span style="--i:9; padding: 40px 50px;"">t</span>
+   <span style="--i:10; padding: 40px 50px;"">i</span>
+   <span style="--i:11; padding: 40px 50px;"">v</span>
+   <span style="--i:12; padding: 40px 50px;"">a</span>
+   <span style="--i:13; padding: 40px 50px;"">t</span>
+   <span style="--i:14; padding: 40px 50px;"">e</span>
+   <span style="--i:15; padding: 40px 50px;"">d</span>
+ </div>
+</div>
+  
+
+<div class="c">
+        <div class="waviy">
+          <h1><a class="ex1">&&emsp;&emsp;&emsp;<span style="--i:1">G</span><span style="--i:2">o</span><span style="--i:2">a</span><span style="--i:2">l</span></a></h1>
+        </div>
+    
+    <div class="waviy">
+       <span style="--i:5; padding: 40px 50px;">O</span>    <span style="--i:6">r</span> <span style="--i:7; padding: 40px 50px;">i</span>    <span style="--i:8; padding: 40px 50px;">e</span>    <span style="--i:9; padding: 40px 50px;">n</span> 
+      <span style="--i:10; padding: 40px 50px;">t</span>    <span style="--i:11; padding: 40px 50px;">e</span>    <span style="--i:12; padding: 40px 50px;">d</span>
+   </div>  
+</div>
+
+
+
+<div class="slider-container">
+        <div class="sliding-bar"></div>
+    </div>
+  
+ <hr>
+  <div class="b">
+  <h5 style="font-family: Times New Roman; color: white; padding: 30px 40px;"><a class="ex2"><em>Giving back to the community is Essential</em><br><br>Giving time to help others<br>through "AT&T Believes" has been rewarding,<br>and is very important to me!</a></h5>
+  </div>
+
+  <div class="c"> 
+   <h5 style="font-family: Times New Roman; color: black; padding: 30px 40px;"><a class="ex2"><em>Giving my best effort is a Priority</em><br><br>Giving my best while working with others,<br>is beneficial to the team<br>and the tasks at hand!</a></h5>
+  </div> 
+ <hr> 
+    <!--  <h6 style="font-family: Times New Roman;style=padding: 3px 8px; background-color: #2f4f4f; color: #fff; height: auto; border: 1px solid black;"><em>Giving my best effort is a Priority</em><br><br>Giving my best while working with others,<br>is beneficial to the team<br>and the tasks at hand!</h6>-->
+
+   
+<!-- /* Skills SECTION -body */ -->
+
+<!-- The Modal -->
 <div id="myModal" class="modal">
   <span class="close">&times;</span>
   <img class="modal-content" id="img01">
@@ -457,39 +594,21 @@ var span = document.getElementsByClassName("close")[0];
 span.onclick = function() { 
   modal.style.display = "none";
 }
-</script> -->
-
-<!--   /* END QR CODES SECTION -body*/ -->
- 
-  <div class="b"> 
-    <p style="text-align: center;" style="color:#990000;"><span>Thank  You</span>Parents, Guardians, Visitors and Friends,<br>for helping to make </p>
-    <h1 style="color:#990000;"><a class="ex2"><em>2025 TEEN SUMMIT A Success!</em></a></h1>
-  </div>
-
-  <!-- Quote #1 Section  -->
-  <div class="c"> 
-   <div style="
-      position: 
-      background-color: inherit;
-      color: #333333;
-      bottom: 600px;
-      right: 0px;
-   "> 
-    <p style="font-family:'Baskerville', Sans Serif;"><small>Before Anything Else, Preparation is the Key to Success!<br>~Alexander Graham Bell</small></p>
-</div>
-  </div>  
-
-  <body style="text-align:center">
-      <div class="popuptw" onclick="myFunction()">Click here for contact information!
-         <span class="popuptext" id="myPopup">ccacdst.teensummit@gmail.com</span>
-       </div>
-<script>
-// clicks on div the opens the popup
-function myFunction() {
-  var popuptw = document.getElementById("myPopup");
-  popuptw.classList.toggle("show");
-}
 </script>
-    
-  </body>
+
+<!-- /* END Skills SECTION -body*/ -->
+
+                                              
+ <BR>
+ <h3 style="text-align: center; color: blue;"><a class="ex2"><strong><em>Thank you for taking time to spend with me, on my journey to find, my next great opportunity!</em></strong></a></h3>
+
+  <div class="slider-container">
+        <div class="sliding-bar">
+          <div class="sliding-text">Thank You!</div>
+        </div>
+    </div>
+  
+
+<p><sub>Resume designed exclusively for internal resume submission; by CarlaDavisJDesigns. c/o 2025</sub></p>  
+</body>
 </html>
