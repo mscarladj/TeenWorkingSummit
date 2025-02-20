@@ -141,6 +141,18 @@
   font-family: inherit;
   margin-top: 30px;
 }
+         
+  .close-button2 {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: #dc3545;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 3px;
+  cursor: pointer;
+   }
+
 
 .navbar a:hover, .dropdown:hover .dropbtn {
   background-color: red;
@@ -384,7 +396,16 @@ tr:nth-child(even) {
    <div class="c">
     <p style="color:black;",style="font-size:5vw;"><a class="ex2"><em>Collaborative team member!</em></a></p>
   </div>    
-  
+
+  <div id="dropdown" class="dropbtn"><p>Test message!</p><a href="#" class="close-button2">Click to Close</a></div>
+  <script>
+    document.querySelector('.close-button').addEventListener('click', function(event) {
+    event.preventDefault(); // Prevent the default action of the anchor tag
+    document.getElementById('dropbtn').classList.remove('show');
+      });
+    // Example code to show the popup initially for demonstration purposes
+    document.getElementById('dropdown').classList.add('show');
+  </script>
   
     <div class ="a">
     <div class="dropdown">
@@ -400,7 +421,7 @@ tr:nth-child(even) {
            <a href="#" style="display: inline-block; 
                        margin-top: 10px; padding: 5px 10px; 
                        background-color: #dc3545; color: #fff; 
-                       text-decoration: none; border-radius: 3px;">Close</a>
+                       text-decoration: none; border-radius: 3px;">Click to Close</a>
        </div>
        </div>
       </div>
@@ -426,7 +447,7 @@ tr:nth-child(even) {
              <a href="#" style="display: inline-block; 
                        margin-top: 10px; padding: 5px 10px; 
                        background-color: #dc3545; color: #fff; 
-                       text-decoration: none; border-radius: 3px;">Close</a>
+                       text-decoration: none; border-radius: 3px;">Click to Close</a>
     </div>
   </div> 
 
